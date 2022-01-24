@@ -1,4 +1,4 @@
-## Laravel Breeze + Inertia + React + Typescript
+## Laravel Breeze + Inertia + React + Typescript + Tailwind
 
-This project is a start point to create new projects with Laravel Breeze, Inertia, React and TypeScript.
+
 
