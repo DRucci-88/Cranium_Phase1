@@ -10,7 +10,8 @@ import route from 'ziggy-js';
 
 export default function Register() {
   const {data, setData, post, processing, errors, reset} = useForm({
-    name: '',
+    firstname: '',
+    lastname: '',
     email: '',
     password: '',
     password_confirmation: '',
@@ -23,7 +24,7 @@ export default function Register() {
   }, []);
 
   const onHandleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setData(event.target.name as "name" | "email" | "password" | "password_confirmation", event.target.type === 'checkbox' ? event.target.checked + '' : event.target.value);
+    setData(event.target.name as "firstname" | "lastname" | "email" | "password" | "password_confirmation", event.target.type === 'checkbox' ? event.target.checked + '' : event.target.value);
   };
 
   const submit = (e: React.SyntheticEvent) => {
@@ -38,14 +39,25 @@ export default function Register() {
 
       <form onSubmit={submit}>
         <div>
-          <Label forInput="name" value="Name"/>
+          <Label forInput="firstname" value="First Name"/>
+          <Label forInput="lastname" value="Last Name"/>
 
           <Input
             type="text"
-            name="name"
-            value={data.name}
+            name="firstname"
+            value={data.firstname}
             className="mt-1 block w-full"
-            autoComplete="name"
+            autoComplete="firstname"
+            isFocused={true}
+            handleChange={onHandleChange}
+            required
+          />
+          <Input
+            type="text"
+            name="lastname"
+            value={data.lastname}
+            className="mt-1 block w-full"
+            autoComplete="lastname"
             isFocused={true}
             handleChange={onHandleChange}
             required

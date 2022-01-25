@@ -9646,7 +9646,7 @@ function Login(_ref) {
     value: data.remember,
     handleChange: onHandleChange
   }), react_1["default"].createElement("span", {
-    className: "ml-2 text-sm text-gray-600"
+    className: "ml-4 text-sm text-gray-600"
   }, "Remember me"))), react_1["default"].createElement("div", {
     className: "flex items-center justify-end mt-4"
   }, canResetPassword && react_1["default"].createElement(inertia_react_1.InertiaLink, {
