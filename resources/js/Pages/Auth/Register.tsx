@@ -40,7 +40,6 @@ export default function Register() {
       <form onSubmit={submit}>
         <div>
           <Label forInput="firstname" value="First Name"/>
-          <Label forInput="lastname" value="Last Name"/>
 
           <Input
             type="text"
@@ -52,6 +51,9 @@ export default function Register() {
             handleChange={onHandleChange}
             required
           />
+
+          <Label forInput="lastname" value="Last Name"/>
+
           <Input
             type="text"
             name="lastname"

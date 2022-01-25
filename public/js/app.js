@@ -9735,7 +9735,8 @@ var ziggy_js_1 = __importDefault(__webpack_require__(/*! ziggy-js */ "./node_mod
 
 function Register() {
   var _ref = (0, inertia_react_2.useForm)({
-    name: '',
+    firstname: '',
+    lastname: '',
     email: '',
     password: '',
     password_confirmation: ''
@@ -9769,14 +9770,26 @@ function Register() {
   }), react_1["default"].createElement("form", {
     onSubmit: submit
   }, react_1["default"].createElement("div", null, react_1["default"].createElement(Label_1["default"], {
-    forInput: "name",
-    value: "Name"
+    forInput: "firstname",
+    value: "First Name"
   }), react_1["default"].createElement(Input_1["default"], {
     type: "text",
-    name: "name",
-    value: data.name,
+    name: "firstname",
+    value: data.firstname,
     className: "mt-1 block w-full",
-    autoComplete: "name",
+    autoComplete: "firstname",
+    isFocused: true,
+    handleChange: onHandleChange,
+    required: true
+  }), react_1["default"].createElement(Label_1["default"], {
+    forInput: "lastname",
+    value: "Last Name"
+  }), react_1["default"].createElement(Input_1["default"], {
+    type: "text",
+    name: "lastname",
+    value: data.lastname,
+    className: "mt-1 block w-full",
+    autoComplete: "lastname",
     isFocused: true,
     handleChange: onHandleChange,
     required: true
