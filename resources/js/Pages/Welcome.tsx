@@ -36,7 +36,7 @@ export default function Welcome(props: any) {
             </li>
             {props.auth.user ? (
                           <InertiaLink href="/dashboard" className="">
-                              Dashboard
+                              Dashboar
                           </InertiaLink>
                       ) : (
                           <>
