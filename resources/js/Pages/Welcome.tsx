@@ -88,8 +88,14 @@ export default function Welcome(props: any) {
           </div>
         </div>
       </div>
-
+      <div className="container mx-auto text-center py-20">
+        <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-black">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+        </h3>
+        <p className="mt-4 tracking-[.3em] text-xl leading-tight text-gray-400">
+          - CRANIUM -
+        </p>
     </div>
-
+    </div>
   );
 }
