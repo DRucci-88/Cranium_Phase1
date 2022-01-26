@@ -10167,7 +10167,7 @@ function Welcome(props) {
     (_a = navContentRef.current) === null || _a === void 0 ? void 0 : _a.classList.toggle('hidden');
   };
 
-  return react_1["default"].createElement("body", {
+  return react_1["default"].createElement("div", {
     className: "bg-white font-sans leading-normal tracking-normal"
   }, react_1["default"].createElement("nav", {
     className: "flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t"
@@ -10251,24 +10251,118 @@ function Welcome(props) {
   }, "Service 3"), react_1["default"].createElement("p", {
     className: "text-gray-400 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")))), react_1["default"].createElement("div", {
-    className: "bg-gray-300 flex flex-col justify-center items-center py-12 "
+    className: "bg-white"
   }, react_1["default"].createElement("div", {
-    className: "grow h-14 "
-  }, react_1["default"].createElement("h1", {
-    className: "text-4xl md:text-6xl font-black mb-4 max-w-screen-lg absolute right-60"
-  }, "Get in put")), react_1["default"].createElement("br", null), react_1["default"].createElement("div", {
-    className: "flex flex-col "
-  }, react_1["default"].createElement("p", {
-    className: "text-gray-400 text-center absolute right-60"
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit,")), react_1["default"].createElement("div", {
-    className: "grow-0 h-14 absolute left-20 "
-  }, "02")), react_1["default"].createElement("div", {
+    className: "container max-w-5xl mx-auto m-8"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-wrap"
+  }, react_1["default"].createElement("div", {
+    className: "w-5/6 sm:w-1/2 p-6"
+  }, react_1["default"].createElement("h3", {
+    className: "text-3xl text-gray-800 font-bold leading-none mb-3"
+  }, "Lorem ipsum dolor sit amet"), react_1["default"].createElement("p", {
+    className: "text-gray-600 mb-8"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.")), react_1["default"].createElement("div", {
+    className: "w-full sm:w-1/2 p-6"
+  }, react_1["default"].createElement("svg", {
+    className: "w-full sm:h-64 mx-auto",
+    viewBox: "0 0 1177 598.5",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1["default"].createElement("title", null, "connected world"), react_1["default"].createElement("rect", {
+    x: "171.5",
+    y: "111.25",
+    width: "834",
+    height: "456",
+    rx: "20.42",
+    fill: "#f2f2f2"
+  })))))), react_1["default"].createElement("div", {
+    className: "bg-gray-300"
+  }, react_1["default"].createElement("div", {
+    className: "container max-w-5xl mx-auto m-8"
+  }, react_1["default"].createElement("div", {
+    className: "flex flex-wrap"
+  }, react_1["default"].createElement("div", {
+    className: "w-full sm:w-1/2 p-6"
+  }, react_1["default"].createElement("svg", {
+    className: "w-full sm:h-64 mx-auto",
+    viewBox: "0 0 1177 598.5",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1["default"].createElement("title", null, "connected world"), react_1["default"].createElement("rect", {
+    x: "171.5",
+    y: "111.25",
+    width: "834",
+    height: "456",
+    rx: "20.42",
+    fill: "#f2f2f2"
+  }))), react_1["default"].createElement("div", {
+    className: "w-5/6 sm:w-1/2 p-6"
+  }, react_1["default"].createElement("h3", {
+    className: "text-3xl text-gray-800 font-bold leading-none mb-3"
+  }, "Get In Touch"), react_1["default"].createElement("p", {
+    className: "text-gray-600 mb-8"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula."), react_1["default"].createElement("button", {
+    className: "bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300"
+  }, "Contact Us"))))), react_1["default"].createElement("div", {
+    className: "bg-white"
+  }, react_1["default"].createElement("div", {
     className: "container mx-auto text-center py-20"
   }, react_1["default"].createElement("h3", {
     className: "w-full my-2 text-3xl font-bold leading-tight text-center text-black"
   }, "\u201CLorem ipsum dolor sit amet, consectetur adipiscing elit.\u201D"), react_1["default"].createElement("p", {
     className: "mt-4 tracking-[.3em] text-xl leading-tight text-gray-400"
-  }, "- CRANIUM -")));
+  }, "- CRANIUM -"))), react_1["default"].createElement("div", {
+    className: "bg-gray-300"
+  }, react_1["default"].createElement("div", {
+    className: "container mx-auto px-8"
+  }, react_1["default"].createElement("div", {
+    className: "w-full flex flex-col md:flex-row py-6"
+  }, react_1["default"].createElement("div", {
+    className: "flex-1 mb-6 text-black"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    className: "text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl",
+    href: "#"
+  }, "CRANIUM"), react_1["default"].createElement("p", {
+    className: "mt-4 text-gray-500 no-underline hover:no-underline text-xs"
+  }, "\xA9 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED"), react_1["default"].createElement("p", {
+    className: "mt-4 text-grey-500 no-underline hover:no-underline text-xs"
+  }, "Privacy \u2014 Terms")), react_1["default"].createElement("div", {
+    className: "flex-1"
+  }, react_1["default"].createElement("p", {
+    className: "uppercase text-gray-500 md:mb-6"
+  }, "Contact"), react_1["default"].createElement("ul", {
+    className: "list-reset mb-6"
+  }, react_1["default"].createElement("li", {
+    className: "mt-2 inline-block mr-2 md:block md:mr-0"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "#",
+    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+  }, "Phone Number")), react_1["default"].createElement("li", {
+    className: "mt-2 inline-block mr-2 md:block md:mr-0"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "#",
+    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+  }, "Email")), react_1["default"].createElement("li", {
+    className: "mt-2 inline-block mr-2 md:block md:mr-0"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "#",
+    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+  }, "Social Media")))), react_1["default"].createElement("div", {
+    className: "flex-1"
+  }, react_1["default"].createElement("p", {
+    className: "uppercase text-gray-500 md:mb-6"
+  }, "Company"), react_1["default"].createElement("ul", {
+    className: "list-reset mb-6"
+  }, react_1["default"].createElement("li", {
+    className: "mt-2 inline-block mr-2 md:block md:mr-0"
+  }, react_1["default"].createElement("a", {
+    href: "#",
+    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+  }, "Terms")), react_1["default"].createElement("li", {
+    className: "mt-2 inline-block mr-2 md:block md:mr-0"
+  }, react_1["default"].createElement("a", {
+    href: "#",
+    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+  }, "Privacy"))))))));
 }
 
 exports["default"] = Welcome;

@@ -1,6 +1,6 @@
-import React, {createRef, LegacyRef, useRef} from 'react';
+import React, {createRef} from 'react';
 import {InertiaLink} from '@inertiajs/inertia-react';
-import route from 'ziggy-js';
+
 
 export default function Welcome(props: any) {
 
@@ -11,7 +11,7 @@ export default function Welcome(props: any) {
   }
 
   return (
-    <body className="bg-white font-sans leading-normal tracking-normal">
+    <div className="bg-white font-sans leading-normal tracking-normal">
       <nav className="flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <InertiaLink href="/" className="text-white no-underline hover:text-white hover:no-underline">
@@ -90,22 +90,53 @@ export default function Welcome(props: any) {
       </div>
 
       {/*bagian Hover*/}
-      <div className="bg-gray-300 flex flex-col justify-center items-center py-12 ">
-        <div className="grow h-14 ">
-          <h1 className="text-4xl md:text-6xl font-black mb-4 max-w-screen-lg absolute right-60">
-            Get in put
-          </h1>
+      <div className="bg-white">
+      <div className="container max-w-5xl mx-auto m-8">
+        <div className="flex flex-wrap">
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Lorem ipsum dolor sit amet
+            </h3>
+            <p className="text-gray-600 mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
+              amet ligula.
+            </p>
+          </div>
+          <div className="w-full sm:w-1/2 p-6">
+            <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
+              <title>connected world</title>
+              <rect x="171.5" y="111.25" width="834" height="456" rx="20.42" fill="#f2f2f2" />
+            </svg>
+          </div>
         </div>
-        <br/>
-        <div className="flex flex-col ">
-          <p className="text-gray-400 text-center absolute right-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+      </div>
+    </div>
+      {/*-----*/}
+      <div className="bg-gray-300">
+      <div className="container max-w-5xl mx-auto m-8">
+        <div className="flex flex-wrap">
+          <div className="w-full sm:w-1/2 p-6">
+            <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
+              <title>connected world</title>
+              <rect x="171.5" y="111.25" width="834" height="456" rx="20.42" fill="#f2f2f2" />
+            </svg>
+          </div>
+          <div className="w-5/6 sm:w-1/2 p-6">
+            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Get In Touch
+            </h3>
+            <p className="text-gray-600 mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
+              amet ligula.
+            </p>
+            <button className="bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300">Contact Us</button>
+          </div>
         </div>
-        <div className="grow-0 h-14 absolute left-20 ">
-          02
-        </div>
+      </div>
       </div>
 
       {/*Footer*/}
+      <div className="bg-white">
       <div className="container mx-auto text-center py-20">
         <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-black">
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
@@ -114,8 +145,46 @@ export default function Welcome(props: any) {
           - CRANIUM -
         </p>
       </div>
+      </div>
 
-    </body>
+      <div className="bg-gray-300">
+        <div className="container mx-auto px-8">
+          <div className="w-full flex flex-col md:flex-row py-6">
+            <div className="flex-1 mb-6 text-black">
+              <InertiaLink className="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">CRANIUM</InertiaLink>
+              <p className="mt-4 text-gray-500 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED</p>
+              <p className="mt-4 text-grey-500 no-underline hover:no-underline text-xs">Privacy — Terms</p>
+            </div>
 
+
+            <div className="flex-1">
+              <p className="uppercase text-gray-500 md:mb-6">Contact</p>
+              <ul className="list-reset mb-6">
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Phone Number</InertiaLink>
+                </li>
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Email</InertiaLink>
+                </li>
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Social Media</InertiaLink>
+                </li>
+              </ul>
+            </div>
+            <div className="flex-1">
+              <p className="uppercase text-gray-500 md:mb-6">Company</p>
+              <ul className="list-reset mb-6">
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+                </li>
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
