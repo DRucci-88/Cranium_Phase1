@@ -11,7 +11,7 @@ export default function Welcome(props: any) {
   }
 
   return (
-    <div className="bg-white font-sans leading-normal tracking-normal">
+    <body className="bg-white font-sans leading-normal tracking-normal">
       <nav className="flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <InertiaLink href="/" className="text-white no-underline hover:text-white hover:no-underline">
@@ -88,6 +88,24 @@ export default function Welcome(props: any) {
           </div>
         </div>
       </div>
+
+      {/*bagian Hover*/}
+      <div className="bg-gray-300 flex flex-col justify-center items-center py-12 ">
+        <div className="grow h-14 ">
+          <h1 className="text-4xl md:text-6xl font-black mb-4 max-w-screen-lg absolute right-60">
+            Get in put
+          </h1>
+        </div>
+        <br/>
+        <div className="flex flex-col ">
+          <p className="text-gray-400 text-center absolute right-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        </div>
+        <div className="grow-0 h-14 absolute left-20 ">
+          02
+        </div>
+      </div>
+
+      {/*Footer*/}
       <div className="container mx-auto text-center py-20">
         <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-black">
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
@@ -95,7 +113,9 @@ export default function Welcome(props: any) {
         <p className="mt-4 tracking-[.3em] text-xl leading-tight text-gray-400">
           - CRANIUM -
         </p>
-    </div>
-    </div>
+      </div>
+
+    </body>
+
   );
 }
