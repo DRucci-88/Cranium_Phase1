@@ -34,23 +34,44 @@ export default function Register() {
   };
 
   return (
+      <div className="container max-w-5xl mx-auto m-8">
+        <div className="flex flex-wrap">
+          <div className="w-full sm:w-1/2 p-16 py-32">
+            <h1 className="text-3xl font-black py-4">Register to Cranium</h1>
+
+            <h3 className="py-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem expedita, facilis incidunt minima modi pariatur! Accusantium aspernatur assumenda debitis id rerum?
+              Distinctio, dolor nobis nulla quisquam sapiente tempore voluptatibus.</h3>
+            <h3>Get Access to:</h3>
+            <ul className="list-disc pl-6">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+          </div>
+
+
+
     <Guest>
       <ValidationErrors errors={errors}/>
 
       <form onSubmit={submit}>
-        <div>
+
+          <div className="mt-4 ">
           <Label forInput="firstname" value="First Name"/>
 
           <Input
             type="text"
             name="firstname"
             value={data.firstname}
-            className="mt-1 block w-full"
+            className="mt-2 block w-full"
             autoComplete="firstname"
             isFocused={true}
             handleChange={onHandleChange}
             required
           />
+        </div>
+
+        <div className="mt-4">
 
           <Label forInput="lastname" value="Last Name"/>
 
@@ -58,7 +79,7 @@ export default function Register() {
             type="text"
             name="lastname"
             value={data.lastname}
-            className="mt-1 block w-full"
+            className="mt-2 block w-full"
             autoComplete="lastname"
             isFocused={true}
             handleChange={onHandleChange}
@@ -107,16 +128,20 @@ export default function Register() {
           />
         </div>
 
-        <div className="flex items-center justify-end mt-4">
+        <Button className="mt-4 block w-full" processing={processing}>
+          Register
+        </Button>
+
+        <div className="items-center justify-self: center mt-4 text-center">
           <InertiaLink href={route('login')} className="underline text-sm text-gray-600 hover:text-gray-900">
             Already registered?
           </InertiaLink>
 
-          <Button className="ml-4" processing={processing}>
-            Register
-          </Button>
         </div>
       </form>
     </Guest>
+ </div>
+        </div>
+
   );
 }
