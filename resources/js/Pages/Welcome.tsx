@@ -89,23 +89,23 @@ export default function Welcome(props: any) {
         </div>
       </div>
 
-      {/*bagian Hover*/}
+      {/*bagian features*/}
       <div className="bg-white">
       <div className="container max-w-5xl mx-auto m-8">
         <div className="flex flex-wrap">
-          <div className="w-5/6 sm:w-1/2 p-6">
-            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
+            <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
               Lorem ipsum dolor sit amet
             </h3>
-            <p className="text-gray-600 mb-8">
+            <p className="m-6 text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
               amet ligula.
             </p>
           </div>
-          <div className="w-full sm:w-1/2 p-6">
+          <div className="w-full sm:w-1/2 p-4">
             <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
-              <title>connected world</title>
-              <rect x="171.5" y="111.25" width="834" height="456" rx="20.42" fill="#f2f2f2" />
+              <title>Image</title>
+              <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2" />
             </svg>
           </div>
         </div>
@@ -115,21 +115,21 @@ export default function Welcome(props: any) {
       <div className="bg-gray-300">
       <div className="container max-w-5xl mx-auto m-8">
         <div className="flex flex-wrap">
-          <div className="w-full sm:w-1/2 p-6">
+          <div className="w-full sm:w-1/2 p-4">
             <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
-              <title>connected world</title>
-              <rect x="171.5" y="111.25" width="834" height="456" rx="20.42" fill="#f2f2f2" />
+              <title>Image</title>
+              <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
             </svg>
           </div>
-          <div className="w-5/6 sm:w-1/2 p-6">
-            <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
+            <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
               Get In Touch
             </h3>
-            <p className="text-gray-600 mb-8">
+            <p className="m-6 text-gray-600 mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
               amet ligula.
             </p>
-            <button className="bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300">Contact Us</button>
+            <button className=" m-6 bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300">Contact Us</button>
           </div>
         </div>
       </div>

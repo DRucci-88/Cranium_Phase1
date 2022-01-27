@@ -10257,22 +10257,22 @@ function Welcome(props) {
   }, react_1["default"].createElement("div", {
     className: "flex flex-wrap"
   }, react_1["default"].createElement("div", {
-    className: "w-5/6 sm:w-1/2 p-6"
+    className: "w-5/6 sm:w-1/2 p-4 items-center sm:items-center"
   }, react_1["default"].createElement("h3", {
-    className: "text-3xl text-gray-800 font-bold leading-none mb-3"
+    className: "m-6 text-3xl text-gray-800 font-bold leading-none mb-3"
   }, "Lorem ipsum dolor sit amet"), react_1["default"].createElement("p", {
-    className: "text-gray-600 mb-8"
+    className: "m-6 text-gray-600"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.")), react_1["default"].createElement("div", {
-    className: "w-full sm:w-1/2 p-6"
+    className: "w-full sm:w-1/2 p-4"
   }, react_1["default"].createElement("svg", {
     className: "w-full sm:h-64 mx-auto",
     viewBox: "0 0 1177 598.5",
     xmlns: "http://www.w3.org/2000/svg"
-  }, react_1["default"].createElement("title", null, "connected world"), react_1["default"].createElement("rect", {
-    x: "171.5",
-    y: "111.25",
-    width: "834",
-    height: "456",
+  }, react_1["default"].createElement("title", null, "Image"), react_1["default"].createElement("rect", {
+    x: "100",
+    y: "-20",
+    width: "900",
+    height: "600",
     rx: "20.42",
     fill: "#f2f2f2"
   })))))), react_1["default"].createElement("div", {
@@ -10282,26 +10282,26 @@ function Welcome(props) {
   }, react_1["default"].createElement("div", {
     className: "flex flex-wrap"
   }, react_1["default"].createElement("div", {
-    className: "w-full sm:w-1/2 p-6"
+    className: "w-full sm:w-1/2 p-4"
   }, react_1["default"].createElement("svg", {
     className: "w-full sm:h-64 mx-auto",
     viewBox: "0 0 1177 598.5",
     xmlns: "http://www.w3.org/2000/svg"
-  }, react_1["default"].createElement("title", null, "connected world"), react_1["default"].createElement("rect", {
-    x: "171.5",
-    y: "111.25",
-    width: "834",
-    height: "456",
+  }, react_1["default"].createElement("title", null, "Image"), react_1["default"].createElement("rect", {
+    x: "100",
+    y: "-20",
+    width: "900",
+    height: "600",
     rx: "20.42",
     fill: "#f2f2f2"
   }))), react_1["default"].createElement("div", {
-    className: "w-5/6 sm:w-1/2 p-6"
+    className: "w-5/6 sm:w-1/2 p-4 items-center sm:items-center"
   }, react_1["default"].createElement("h3", {
-    className: "text-3xl text-gray-800 font-bold leading-none mb-3"
+    className: "m-6 text-3xl text-gray-800 font-bold leading-none mb-3"
   }, "Get In Touch"), react_1["default"].createElement("p", {
-    className: "text-gray-600 mb-8"
+    className: "m-6 text-gray-600 mb-4"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula."), react_1["default"].createElement("button", {
-    className: "bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300"
+    className: " m-6 bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300"
   }, "Contact Us"))))), react_1["default"].createElement("div", {
     className: "bg-white"
   }, react_1["default"].createElement("div", {
