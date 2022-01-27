@@ -9,7 +9,6 @@ export default function Welcome(props: any) {
   const navToggle = () => {
     navContentRef.current?.classList.toggle('hidden');
   }
-
   return (
     <div className="bg-white font-sans leading-normal tracking-normal">
       <nav className="flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t">
