@@ -87,7 +87,7 @@ export default function Homepage(props: any) {
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
-          <div className="rounded-full h-28 w-28 bg-black m-8 bg-[url('/img/darren.png')]" ></div>
+          <div className="rounded-full h-28 w-28 bg-black m-8" ></div>
       </div>
       </div>
 

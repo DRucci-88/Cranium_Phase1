@@ -10263,7 +10263,7 @@ function Homepage(props) {
   }), react_1["default"].createElement("div", {
     className: "rounded-full h-28 w-28 bg-black m-8"
   }), react_1["default"].createElement("div", {
-    className: "rounded-full h-28 w-28 bg-black m-8 bg-[url('/img/darren.png')]"
+    className: "rounded-full h-28 w-28 bg-black m-8"
   }))), react_1["default"].createElement("div", {
     className: "bg-white"
   }, react_1["default"].createElement("div", {
