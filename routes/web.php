@@ -15,13 +15,17 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', static function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
+});
+
+Route::get('/swiper', static function() {
+    return Inertia::render('SwiperLearning');
 });
 
 Route::get('/dashboard', function () {
