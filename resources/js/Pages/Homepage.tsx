@@ -79,7 +79,7 @@ export default function Homepage(props: any) {
 </div>
 
       {/*----*/}
-      <div className="bg-pink-400">
+      <div className="bg-gray-200">
         <h2 className="text-center text-2xl font-bold py-6"> Our Client</h2>
         <div className="flex justify-center">
         <div className="rounded-full h-28 w-28 bg-black m-8"></div>
@@ -128,12 +128,146 @@ export default function Homepage(props: any) {
                 <p className="p-4"> See More..</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/*-------*/}
+      <div className="bg-gray-100 min-h-screen">
+        <div className="h-screen flex flex-wrap justify-center items-center">
+          <div className="w-2/6 p-6 items-center">
+            <h3 className="m-2 text-3xl text-gray-800 font-bold leading-none mb-3">
+              Features
+            </h3>
+            <p className="m-2 text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className="py-4">
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+            </div>
+            <InertiaLink href="#" className=" w-52 px-2 py-4 mt-4  border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Learn More</InertiaLink>
+          </div>
+          <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
+            <svg className="w-full h-full">
+              <title>Image</title>
+              <rect   width="100%" display="block" height="100%" rx="15" fill="white" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      {/*-------*/}
+      <div className="bg-white">
+        <div className="h-screen">
+          <h1 className="py-4 text-2xl font-bold text-black text-center">Account Plans</h1>
+          <p className="py-6 mb-4 text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div className="flex justify-center items-center ">
+            <div className="bg-gray-100 rounded-lg m-4 border-2 border-black">
+              <div className="h-64 w-64 flex flex-col justify-center items-center">
+                <div className="rounded-full h-16 w-16 bg-black  "></div>
+                <p className="text-black text-center py-2">Title</p>
+                <p className="text-center py-2 ">Subtitle</p>
+                <p className="text-center">Feature 1</p>
+                <p className="text-center">Feature 2</p>
+                <p className="text-center">Feature 3</p>
+              </div>
+              <div className="h-32 w-64  flex justify-center items-center">
+                <InertiaLink href="#" className=" px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Order Now</InertiaLink>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 rounded-lg m-4 border-2 border-black">
+              <div className="h-64 w-64 flex flex-col justify-center items-center">
+                <div className="rounded-full h-16 w-16 bg-black  "></div>
+                <p className="text-black text-center py-2">Title</p>
+                <p className="text-center py-2 ">Subtitle</p>
+                <p className="text-center">Feature 1</p>
+                <p className="text-center">Feature 2</p>
+                <p className="text-center">Feature 3</p>
+              </div>
+              <div className="h-32 w-64  flex justify-center items-center">
+                <InertiaLink href="#" className=" px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Order Now</InertiaLink>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 rounded-lg m-4 border-2 border-black">
+              <div className="h-64 w-64 flex flex-col justify-center items-center">
+                <div className="rounded-full h-16 w-16 bg-black  "></div>
+                <p className="text-black text-center py-2">Title</p>
+                <p className="text-center py-2 ">Subtitle</p>
+                <p className="text-center">Feature 1</p>
+                <p className="text-center">Feature 2</p>
+                <p className="text-center">Feature 3</p>
+              </div>
+              <div className="h-32 w-64  flex justify-center items-center">
+                <InertiaLink href="#" className=" px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Order Now</InertiaLink>
+              </div>
+            </div>
 
 
 
           </div>
         </div>
       </div>
+
+
+      {/*-------*/}
+      <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
+        <h1 className="text-4xl md:text-6xl font-black mb-4 max-w-screen-lg text-center">
+          Ready to create an event?.
+        </h1>
+        <h6 className="text-xl md:text-2xl text-gray-400 mb-8 max-w-screen-md text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </h6>
+        <div className="flex justify-center items-center">
+        <InertiaLink href="#" className="bg-black w-52 px-2 py-4 mr-6  text-center text-white inline-block rounded shadow hover:text-blue-300">Host an event</InertiaLink>
+        <InertiaLink href="#" className=" w-52 px-2 py-4 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Contact us</InertiaLink>
+        </div>
+      </div>
+
+      {/*-------*/}
+
+      <div className="bg-gray-300">
+        <div className="container mx-auto px-8">
+          <div className="w-full flex flex-col md:flex-row py-6">
+            <div className="flex-1 mb-6 text-black">
+              <InertiaLink className="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">CRANIUM</InertiaLink>
+              <p className="mt-4 text-gray-500 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED</p>
+              <p className="mt-4 text-grey-500 no-underline hover:no-underline text-xs">Privacy — Terms</p>
+            </div>
+
+
+            <div className="flex-1">
+              <p className="uppercase text-gray-500 md:mb-6">Contact</p>
+              <ul className="list-reset mb-6">
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Phone Number</InertiaLink>
+                </li>
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Email</InertiaLink>
+                </li>
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Social Media</InertiaLink>
+                </li>
+              </ul>
+            </div>
+            <div className="flex-1">
+              <p className="uppercase text-gray-500 md:mb-6">Company</p>
+              <ul className="list-reset mb-6">
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+                </li>
+                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                  <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   );
