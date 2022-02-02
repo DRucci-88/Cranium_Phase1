@@ -10221,25 +10221,100 @@ function Homepage(props) {
     href: "Login",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
   }, "Sign In"))))), react_1["default"].createElement("div", {
-    className: "bg-pink-400 min-h-screen "
+    className: "bg-white min-h-screen "
   }, react_1["default"].createElement("div", {
     className: "h-screen flex flex-wrap justify-center items-center"
   }, react_1["default"].createElement("div", {
-    className: "w-5/6 sm:w-1/2 p-4 items-center sm:items-center"
+    className: "w-2/6 p-6 items-center"
   }, react_1["default"].createElement("h3", {
     className: "m-2 text-3xl text-gray-800 font-bold leading-none mb-3"
-  }, "Blackpink"), react_1["default"].createElement("p", {
+  }, "About"), react_1["default"].createElement("p", {
     className: "m-2 text-gray-600"
-  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.")), react_1["default"].createElement("div", {
-    className: "w-5/6 h-5/6 sm:h-1/2 sm:w-1/2 p-4"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "#",
+    className: "bg-black w-52 px-2 py-4 mr-6  text-center text-white inline-block rounded shadow hover:text-blue-300"
+  }, "Join an event"), react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "#",
+    className: " w-52 px-2 py-4 text-center text-black border-2 border-black inline-block rounded shadow hover:text-blue-300"
+  }, "Host an event")), react_1["default"].createElement("div", {
+    className: "w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2"
   }, react_1["default"].createElement("svg", {
     className: "w-full h-full"
   }, react_1["default"].createElement("title", null, "Image"), react_1["default"].createElement("rect", {
-    width: "430",
-    height: "280",
+    width: "100%",
+    display: "block",
+    height: "100%",
     rx: "15",
     fill: "#f2f2f2"
-  }))))));
+  }))))), react_1["default"].createElement("div", {
+    className: "bg-pink-400"
+  }, react_1["default"].createElement("h2", {
+    className: "text-center text-2xl font-bold py-6"
+  }, " Our Client"), react_1["default"].createElement("div", {
+    className: "flex justify-center"
+  }, react_1["default"].createElement("div", {
+    className: "rounded-full h-28 w-28 bg-black m-8"
+  }), react_1["default"].createElement("div", {
+    className: "rounded-full h-28 w-28 bg-black m-8"
+  }), react_1["default"].createElement("div", {
+    className: "rounded-full h-28 w-28 bg-black m-8"
+  }), react_1["default"].createElement("div", {
+    className: "rounded-full h-28 w-28 bg-black m-8"
+  }), react_1["default"].createElement("div", {
+    className: "rounded-full h-28 w-28 bg-black m-8"
+  }), react_1["default"].createElement("div", {
+    className: "rounded-full h-28 w-28 bg-black m-8 bg-[url('/img/darren.png')]"
+  }))), react_1["default"].createElement("div", {
+    className: "bg-white"
+  }, react_1["default"].createElement("div", {
+    className: "h-screen"
+  }, react_1["default"].createElement("h1", {
+    className: "py-4 text-2xl font-bold text-black text-center"
+  }, "Events"), react_1["default"].createElement("p", {
+    className: "py-6 mb-4 text-gray-600 text-center"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."), react_1["default"].createElement("div", {
+    className: "flex justify-center items-center"
+  }, react_1["default"].createElement("div", {
+    className: "bg-gray-100 rounded-lg m-4"
+  }, react_1["default"].createElement("div", {
+    className: "h-64 w-64"
+  }), react_1["default"].createElement("div", {
+    className: "h-32 w-64 border-2 border-black rounded-b-lg"
+  }, react_1["default"].createElement("p", {
+    className: "p-4 mb-4"
+  }, "Events #1"), react_1["default"].createElement("p", {
+    className: "p-4"
+  }, " See More.."))), react_1["default"].createElement("div", {
+    className: "bg-gray-100 rounded-lg m-4"
+  }, react_1["default"].createElement("div", {
+    className: "h-64 w-64"
+  }), react_1["default"].createElement("div", {
+    className: "h-32 w-64 border-2 border-black rounded-b-lg"
+  }, react_1["default"].createElement("p", {
+    className: "p-4 mb-4"
+  }, "Events #1"), react_1["default"].createElement("p", {
+    className: "p-4"
+  }, " See More.."))), react_1["default"].createElement("div", {
+    className: "bg-gray-100 rounded-lg m-4"
+  }, react_1["default"].createElement("div", {
+    className: "h-64 w-64"
+  }), react_1["default"].createElement("div", {
+    className: "h-32 w-64 border-2 border-black rounded-b-lg"
+  }, react_1["default"].createElement("p", {
+    className: "p-4 mb-4"
+  }, "Events #1"), react_1["default"].createElement("p", {
+    className: "p-4"
+  }, " See More.."))), react_1["default"].createElement("div", {
+    className: "bg-gray-100 rounded-lg m-4"
+  }, react_1["default"].createElement("div", {
+    className: "h-64 w-64"
+  }), react_1["default"].createElement("div", {
+    className: "h-32 w-64 border-2 border-black rounded-b-lg"
+  }, react_1["default"].createElement("p", {
+    className: "p-4 mb-4"
+  }, "Events #1"), react_1["default"].createElement("p", {
+    className: "p-4"
+  }, " See More..")))))));
 }
 
 exports["default"] = Homepage;

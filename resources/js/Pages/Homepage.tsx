@@ -57,25 +57,84 @@ export default function Homepage(props: any) {
 
 
       {/*----*/}
-<div className="bg-pink-400 min-h-screen ">
+<div className="bg-white min-h-screen ">
   <div className="h-screen flex flex-wrap justify-center items-center">
-    <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
+    <div className="w-2/6 p-6 items-center">
     <h3 className="m-2 text-3xl text-gray-800 font-bold leading-none mb-3">
-      Blackpink
+      About
     </h3>
     <p className="m-2 text-gray-600">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-      amet ligula.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
+      <InertiaLink href="#" className="bg-black w-52 px-2 py-4 mr-6  text-center text-white inline-block rounded shadow hover:text-blue-300">Join an event</InertiaLink>
+      <InertiaLink href="#" className=" w-52 px-2 py-4 text-center text-black border-2 border-black inline-block rounded shadow hover:text-blue-300">Host an event</InertiaLink>
     </div>
-    <div className="w-5/6 h-5/6 sm:h-1/2 sm:w-1/2 p-4">
+    <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
       <svg className="w-full h-full">
         <title>Image</title>
-        <rect  width="430" height="280" rx="15" fill="#f2f2f2" />
+        <rect   width="100%" display="block" height="100%" rx="15" fill="#f2f2f2" />
       </svg>
     </div>
   </div>
 </div>
+
+      {/*----*/}
+      <div className="bg-pink-400">
+        <h2 className="text-center text-2xl font-bold py-6"> Our Client</h2>
+        <div className="flex justify-center">
+        <div className="rounded-full h-28 w-28 bg-black m-8"></div>
+          <div className="rounded-full h-28 w-28 bg-black m-8"></div>
+          <div className="rounded-full h-28 w-28 bg-black m-8"></div>
+          <div className="rounded-full h-28 w-28 bg-black m-8"></div>
+          <div className="rounded-full h-28 w-28 bg-black m-8"></div>
+          <div className="rounded-full h-28 w-28 bg-black m-8 bg-[url('/img/darren.png')]" ></div>
+      </div>
+      </div>
+
+      {/*------*/}
+      <div className="bg-white">
+        <div className="h-screen">
+        <h1 className="py-4 text-2xl font-bold text-black text-center">Events</h1>
+        <p className="py-6 mb-4 text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div className="flex justify-center items-center">
+            <div className="bg-gray-100 rounded-lg m-4">
+              <div className="h-64 w-64"></div>
+              <div className="h-32 w-64 border-2 border-black rounded-b-lg">
+                <p className="p-4 mb-4">Events #1</p>
+                <p className="p-4"> See More..</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 rounded-lg m-4">
+              <div className="h-64 w-64"></div>
+              <div className="h-32 w-64 border-2 border-black rounded-b-lg">
+                <p className="p-4 mb-4">Events #1</p>
+                <p className="p-4"> See More..</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 rounded-lg m-4">
+              <div className="h-64 w-64"></div>
+              <div className="h-32 w-64 border-2 border-black rounded-b-lg">
+                <p className="p-4 mb-4">Events #1</p>
+                <p className="p-4"> See More..</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-100 rounded-lg m-4">
+              <div className="h-64 w-64"></div>
+              <div className="h-32 w-64 border-2 border-black rounded-b-lg">
+                <p className="p-4 mb-4">Events #1</p>
+                <p className="p-4"> See More..</p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
