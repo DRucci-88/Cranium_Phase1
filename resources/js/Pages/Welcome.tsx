@@ -49,7 +49,7 @@ export default function Welcome(props: any) {
 
       {/* Hero */}
 
-      <div className="bg-white h-screen flex flex-col justify-center items-center">
+      <div className="bg-primary h-screen flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-6xl font-black mb-4 max-w-screen-lg text-center">
           At eripuit signiferumque sea, vel ad mucius eiusmod.
         </h1>
@@ -63,7 +63,7 @@ export default function Welcome(props: any) {
 
       {/* Services */}
 
-      <div className="bg-gray-300 flex flex-col justify-center items-center py-12">
+      <div className="bg-secondary flex flex-col justify-center items-center py-12">
         <h4 className="text-2xl md:text-4xl text-black font-bold text-center">
           Services
         </h4>
