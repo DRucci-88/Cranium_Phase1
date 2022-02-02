@@ -9280,7 +9280,7 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 function Guest(_ref) {
   var children = _ref.children;
   return react_1["default"].createElement("div", {
-    className: "px-12 w- my-14 bg-white shadow-md overflow-hidden sm:rounded-lg bg-gray-100 items-center"
+    className: "px-12 w-auto my-14 bg-white shadow-md overflow-hidden sm:rounded-lg bg-gray-100"
   }, children);
 }
 
@@ -9551,8 +9551,6 @@ var Button_1 = __importDefault(__webpack_require__(/*! @/Components/Button */ ".
 
 var Checkbox_1 = __importDefault(__webpack_require__(/*! @/Components/Checkbox */ "./resources/js/Components/Checkbox.tsx"));
 
-var Guest_1 = __importDefault(__webpack_require__(/*! @/Layouts/Guest */ "./resources/js/Layouts/Guest.tsx"));
-
 var Input_1 = __importDefault(__webpack_require__(/*! @/Components/Input */ "./resources/js/Components/Input.tsx"));
 
 var Label_1 = __importDefault(__webpack_require__(/*! @/Components/Label */ "./resources/js/Components/Label.tsx"));
@@ -9598,36 +9596,38 @@ function Login(_ref) {
     post((0, ziggy_js_1["default"])('login'));
   };
 
-  return react_1["default"].createElement(Guest_1["default"], null, status && react_1["default"].createElement("div", {
+  return react_1["default"].createElement("nav", null, status && react_1["default"].createElement("div", {
     className: "mb-4 font-medium text-sm text-green-600"
   }, status), react_1["default"].createElement(ValidationErrors_1["default"], {
     errors: errors
   }), react_1["default"].createElement("form", {
     onSubmit: submit
-  }, react_1["default"].createElement("div", null, react_1["default"].createElement(Label_1["default"], {
+  }, react_1["default"].createElement("div", {
+    className: "w-full sm:max-w-md mt-48 ml-auto mr-auto px-6 py-4 shadow-md overflow-hidden sm:rounded-lg bg-gray-100"
+  }, react_1["default"].createElement("div", {
+    className: "sm:max-w-md px-8 py-4 flex flex-col justify-center items-center sm:items-center"
+  }, react_1["default"].createElement(Label_1["default"], {
     forInput: "email",
     value: "Email"
   }), react_1["default"].createElement(Input_1["default"], {
     type: "text",
     name: "email",
     value: data.email,
-    className: "mt-1 block w-full",
+    className: "mt-2 block w-full mb-2",
     autoComplete: "username",
     isFocused: true,
     handleChange: onHandleChange
-  })), react_1["default"].createElement("div", {
-    className: "mt-4"
-  }, react_1["default"].createElement(Label_1["default"], {
+  }), react_1["default"].createElement(Label_1["default"], {
     forInput: "password",
     value: "Password"
   }), react_1["default"].createElement(Input_1["default"], {
     type: "password",
     name: "password",
     value: data.password,
-    className: "mt-1 block w-full",
+    className: "mt-2 block w-full",
     autoComplete: "current-password",
     handleChange: onHandleChange
-  })), react_1["default"].createElement("div", {
+  }), react_1["default"].createElement("div", {
     className: "block mt-4"
   }, react_1["default"].createElement("label", {
     className: "flex items-center"
@@ -9645,7 +9645,7 @@ function Login(_ref) {
   }, "Forgot your password?"), react_1["default"].createElement(Button_1["default"], {
     className: "ml-4",
     processing: processing
-  }, "Log in"))));
+  }, "Log in"))))));
 }
 
 exports["default"] = Login;
@@ -10216,7 +10216,7 @@ function Welcome(props) {
     href: "",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
   }, "Contact"))))), react_1["default"].createElement("div", {
-    className: "bg-primary h-screen flex flex-col justify-center items-center"
+    className: "bg-white h-screen flex flex-col justify-center items-center"
   }, react_1["default"].createElement("h1", {
     className: "text-4xl md:text-6xl font-black mb-4 max-w-screen-lg text-center"
   }, "At eripuit signiferumque sea, vel ad mucius eiusmod."), react_1["default"].createElement("h6", {
@@ -10225,7 +10225,7 @@ function Welcome(props) {
     href: "#",
     className: "bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300"
   }, "CTA")), react_1["default"].createElement("div", {
-    className: "bg-secondary flex flex-col justify-center items-center py-12"
+    className: "bg-gray-300 flex flex-col justify-center items-center py-12"
   }, react_1["default"].createElement("h4", {
     className: "text-2xl md:text-4xl text-black font-bold text-center"
   }, "Services"), react_1["default"].createElement("p", {

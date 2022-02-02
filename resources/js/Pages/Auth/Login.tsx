@@ -38,38 +38,37 @@ export default function Login({ status, canResetPassword }: Props) {
     };
 
     return (
-        <Guest>
+        <nav>
             {status && <div className="mb-4 font-medium text-sm text-green-600">{status}</div>}
 
             <ValidationErrors errors={errors} />
 
             <form onSubmit={submit}>
-                <div>
+              <div className="w-full sm:max-w-md mt-48 ml-auto mr-auto px-6 py-4 shadow-md overflow-hidden sm:rounded-lg bg-gray-100">
+              <div className="sm:max-w-md px-8 py-4 flex flex-col justify-center items-center sm:items-center">
                     <Label forInput="email" value="Email" />
 
                     <Input
                         type="text"
                         name="email"
                         value={data.email}
-                        className="mt-1 block w-full"
+                        className="mt-2 block w-full mb-2"
                         autoComplete="username"
                         isFocused={true}
                         handleChange={onHandleChange}
                     />
-                </div>
 
-                <div className="mt-4">
                     <Label forInput="password" value="Password" />
 
                     <Input
                         type="password"
                         name="password"
                         value={data.password}
-                        className="mt-1 block w-full"
+                        className="mt-2 block w-full"
                         autoComplete="current-password"
                         handleChange={onHandleChange}
                     />
-                </div>
+
 
                 <div className="block mt-4">
                     <label className="flex items-center">
@@ -93,7 +92,9 @@ export default function Login({ status, canResetPassword }: Props) {
                         Log in
                     </Button>
                 </div>
+              </div>
+              </div>
             </form>
-        </Guest>
+        </nav>
     );
 }
