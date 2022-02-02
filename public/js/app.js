@@ -9280,7 +9280,7 @@ var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/r
 function Guest(_ref) {
   var children = _ref.children;
   return react_1["default"].createElement("div", {
-    className: "px-12 w-auto my-14 bg-white shadow-md overflow-hidden sm:rounded-lg bg-gray-100"
+    className: "px-12 w- my-14 bg-white shadow-md overflow-hidden sm:rounded-lg bg-gray-100 items-center"
   }, children);
 }
 
@@ -10113,6 +10113,139 @@ exports["default"] = Dashboard;
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Homepage.tsx":
+/*!*****************************************!*\
+  !*** ./resources/js/Pages/Homepage.tsx ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  Object.defineProperty(o, k2, {
+    enumerable: true,
+    get: function get() {
+      return m[k];
+    }
+  });
+} : function (o, m, k, k2) {
+  if (k2 === undefined) k2 = k;
+  o[k2] = m[k];
+});
+
+var __setModuleDefault = this && this.__setModuleDefault || (Object.create ? function (o, v) {
+  Object.defineProperty(o, "default", {
+    enumerable: true,
+    value: v
+  });
+} : function (o, v) {
+  o["default"] = v;
+});
+
+var __importStar = this && this.__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+  }
+
+  __setModuleDefault(result, mod);
+
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var inertia_react_1 = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
+
+function Homepage(props) {
+  var navContentRef = (0, react_1.createRef)();
+
+  var navToggle = function navToggle() {
+    var _a;
+
+    (_a = navContentRef.current) === null || _a === void 0 ? void 0 : _a.classList.toggle('hidden');
+  };
+
+  return react_1["default"].createElement("div", {
+    className: "bg-white font-sans leading-normal tracking-normal"
+  }, react_1["default"].createElement("nav", {
+    className: "flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t"
+  }, react_1["default"].createElement("div", {
+    className: "flex items-center flex-shrink-0 text-white mr-6"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "/",
+    className: "text-white no-underline hover:text-white hover:no-underline"
+  }, react_1["default"].createElement("span", {
+    className: "text-2xl pl-2 font-semibold"
+  }, "Cranium"))), react_1["default"].createElement("div", {
+    className: "block lg:hidden"
+  }, react_1["default"].createElement("button", {
+    onClick: navToggle,
+    className: "flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white"
+  }, react_1["default"].createElement("svg", {
+    className: "fill-current h-3 w-3",
+    viewBox: "0 0 20 20",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, react_1["default"].createElement("title", null, "Menu"), react_1["default"].createElement("path", {
+    d: "M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+  })))), react_1["default"].createElement("div", {
+    className: "w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0",
+    ref: navContentRef
+  }, react_1["default"].createElement("ul", {
+    className: "list-reset lg:flex justify-end flex-1 items-center"
+  }, react_1["default"].createElement("li", {
+    className: "mr-6"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "",
+    className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
+  }, "Events")), react_1["default"].createElement("li", {
+    className: "mr-6"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "",
+    className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
+  }, "Features")), react_1["default"].createElement("li", {
+    className: "mr-6"
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "",
+    className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
+  }, "Account Plans")), react_1["default"].createElement("button", {
+    className: "mr-6 bg-black border-2 border-white rounded "
+  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    href: "Login",
+    className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
+  }, "Sign In"))))), react_1["default"].createElement("div", {
+    className: "bg-pink-400 min-h-screen "
+  }, react_1["default"].createElement("div", {
+    className: "h-screen flex flex-wrap justify-center items-center"
+  }, react_1["default"].createElement("div", {
+    className: "w-5/6 sm:w-1/2 p-4 items-center sm:items-center"
+  }, react_1["default"].createElement("h3", {
+    className: "m-2 text-3xl text-gray-800 font-bold leading-none mb-3"
+  }, "Blackpink"), react_1["default"].createElement("p", {
+    className: "m-2 text-gray-600"
+  }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.")), react_1["default"].createElement("div", {
+    className: "w-5/6 h-5/6 sm:h-1/2 sm:w-1/2 p-4"
+  }, react_1["default"].createElement("svg", {
+    className: "w-full h-full"
+  }, react_1["default"].createElement("title", null, "Image"), react_1["default"].createElement("rect", {
+    width: "430",
+    height: "280",
+    rx: "15",
+    fill: "#f2f2f2"
+  }))))));
+}
+
+exports["default"] = Homepage;
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Welcome.tsx":
 /*!****************************************!*\
   !*** ./resources/js/Pages/Welcome.tsx ***!
@@ -10216,7 +10349,7 @@ function Welcome(props) {
     href: "",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
   }, "Contact"))))), react_1["default"].createElement("div", {
-    className: "bg-white h-screen flex flex-col justify-center items-center"
+    className: "bg-primary h-screen flex flex-col justify-center items-center"
   }, react_1["default"].createElement("h1", {
     className: "text-4xl md:text-6xl font-black mb-4 max-w-screen-lg text-center"
   }, "At eripuit signiferumque sea, vel ad mucius eiusmod."), react_1["default"].createElement("h6", {
@@ -10225,7 +10358,7 @@ function Welcome(props) {
     href: "#",
     className: "bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300"
   }, "CTA")), react_1["default"].createElement("div", {
-    className: "bg-gray-300 flex flex-col justify-center items-center py-12"
+    className: "bg-secondary flex flex-col justify-center items-center py-12"
   }, react_1["default"].createElement("h4", {
     className: "text-2xl md:text-4xl text-black font-bold text-center"
   }, "Services"), react_1["default"].createElement("p", {
@@ -63637,6 +63770,8 @@ var map = {
 	"./Auth/VerifyEmail.tsx": "./resources/js/Pages/Auth/VerifyEmail.tsx",
 	"./Dashboard": "./resources/js/Pages/Dashboard.tsx",
 	"./Dashboard.tsx": "./resources/js/Pages/Dashboard.tsx",
+	"./Homepage": "./resources/js/Pages/Homepage.tsx",
+	"./Homepage.tsx": "./resources/js/Pages/Homepage.tsx",
 	"./Welcome": "./resources/js/Pages/Welcome.tsx",
 	"./Welcome.tsx": "./resources/js/Pages/Welcome.tsx"
 };
