@@ -63,11 +63,11 @@ export default function Homepage(props: any) {
     <h3 className="m-2 text-3xl text-gray-800 font-bold leading-none mb-3">
       About
     </h3>
-    <p className="m-2 text-gray-600">
+    <p className="m-2 text-gray-600 py-4">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
-      <InertiaLink href="#" className="bg-black w-52 px-2 py-4 mr-6  text-center text-white inline-block rounded shadow hover:text-blue-300">Join an event</InertiaLink>
-      <InertiaLink href="#" className=" w-52 px-2 py-4 text-center text-black border-2 border-black inline-block rounded shadow hover:text-blue-300">Host an event</InertiaLink>
+      <InertiaLink href="#" className="btn-primary mr-4">Join an event</InertiaLink>
+      <InertiaLink href="#" className="btn-secondary">Host an event</InertiaLink>
     </div>
     <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
       <svg className="w-full h-full">
