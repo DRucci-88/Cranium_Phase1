@@ -109,6 +109,7 @@ export default function Welcome(props: any) {
         </div>
       </div>
     </div>
+
       {/*-----*/}
       <div className="bg-gray-300">
       <div className="container max-w-5xl mx-auto m-8">
