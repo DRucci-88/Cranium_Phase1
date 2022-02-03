@@ -17,7 +17,7 @@ class RegisteredUserController extends Controller
     /**
      * Display the registration view.
      *
-     * @return \Illuminate\View\View
+     * @return \Inertia\Response
      */
     public function create()
     {
@@ -34,13 +34,15 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
+//        dd($request->input());
         $request->validate([
-            'name' => 'required|string|max:255',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $user = User::create([
+        $user = User::query()->create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),

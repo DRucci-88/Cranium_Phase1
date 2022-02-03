@@ -9559,6 +9559,18 @@ exports["default"] = ForgotPassword;
 "use strict";
 
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
   if (k2 === undefined) k2 = k;
   Object.defineProperty(o, k2, {
@@ -9625,17 +9637,22 @@ function Login(_ref) {
   var status = _ref.status,
       canResetPassword = _ref.canResetPassword;
 
-  var _ref2 = (0, inertia_react_2.useForm)({
+  var _ref2 = (0, react_1.useState)('password'),
+      _ref3 = _slicedToArray(_ref2, 2),
+      showPass = _ref3[0],
+      setShowPass = _ref3[1];
+
+  var _ref4 = (0, inertia_react_2.useForm)({
     email: '',
     password: '',
     remember: ''
   }),
-      data = _ref2.data,
-      setData = _ref2.setData,
-      post = _ref2.post,
-      processing = _ref2.processing,
-      errors = _ref2.errors,
-      reset = _ref2.reset;
+      data = _ref4.data,
+      setData = _ref4.setData,
+      post = _ref4.post,
+      processing = _ref4.processing,
+      errors = _ref4.errors,
+      reset = _ref4.reset;
 
   (0, react_1.useEffect)(function () {
     return function () {
@@ -9649,7 +9666,9 @@ function Login(_ref) {
 
   var submit = function submit(e) {
     e.preventDefault();
-    post((0, ziggy_js_1["default"])('login'));
+    post((0, ziggy_js_1["default"])('login')).then(function (r) {
+      return '';
+    });
   };
 
   return react_1["default"].createElement("nav", null, status && react_1["default"].createElement("div", {
@@ -9677,13 +9696,21 @@ function Login(_ref) {
     forInput: "password",
     value: "Password"
   }), react_1["default"].createElement(Input_1["default"], {
-    type: "password",
+    type: showPass,
     name: "password",
     value: data.password,
     className: "mt-2 block w-full",
     autoComplete: "current-password",
     handleChange: onHandleChange
-  }), react_1["default"].createElement("div", {
+  }), react_1["default"].createElement("label", {
+    htmlFor: 'show_password'
+  }, react_1["default"].createElement("input", {
+    type: "checkbox",
+    id: 'show_password',
+    onChange: function onChange() {
+      return showPass === 'password' ? setShowPass('text') : setShowPass('password');
+    }
+  }), "Show Password"), react_1["default"].createElement("div", {
     className: "block mt-4"
   }, react_1["default"].createElement("label", {
     className: "flex items-center"
@@ -9716,6 +9743,18 @@ exports["default"] = Login;
 
 "use strict";
 
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var __createBinding = this && this.__createBinding || (Object.create ? function (o, m, k, k2) {
   if (k2 === undefined) k2 = k;
@@ -9780,19 +9819,29 @@ var inertia_react_2 = __webpack_require__(/*! @inertiajs/inertia-react */ "./nod
 var ziggy_js_1 = __importDefault(__webpack_require__(/*! ziggy-js */ "./node_modules/ziggy-js/dist/index.js"));
 
 function Register() {
-  var _ref = (0, inertia_react_2.useForm)({
-    firstname: '',
-    lastname: '',
+  var _ref = (0, react_1.useState)('password'),
+      _ref2 = _slicedToArray(_ref, 2),
+      showPass = _ref2[0],
+      setShowPass = _ref2[1];
+
+  var _ref3 = (0, react_1.useState)('password'),
+      _ref4 = _slicedToArray(_ref3, 2),
+      showConfirmPass = _ref4[0],
+      setShowConfirmPass = _ref4[1];
+
+  var _ref5 = (0, inertia_react_2.useForm)({
+    first_name: '',
+    last_name: '',
     email: '',
     password: '',
     password_confirmation: ''
   }),
-      data = _ref.data,
-      setData = _ref.setData,
-      post = _ref.post,
-      processing = _ref.processing,
-      errors = _ref.errors,
-      reset = _ref.reset;
+      data = _ref5.data,
+      setData = _ref5.setData,
+      post = _ref5.post,
+      processing = _ref5.processing,
+      errors = _ref5.errors,
+      reset = _ref5.reset;
 
   (0, react_1.useEffect)(function () {
     return function () {
@@ -9835,7 +9884,7 @@ function Register() {
   }), react_1["default"].createElement(Input_1["default"], {
     type: "text",
     name: "firstname",
-    value: data.firstname,
+    value: data.first_name,
     className: "mt-2 block w-full",
     autoComplete: "firstname",
     isFocused: true,
@@ -9849,7 +9898,7 @@ function Register() {
   }), react_1["default"].createElement(Input_1["default"], {
     type: "text",
     name: "lastname",
-    value: data.lastname,
+    value: data.last_name,
     className: "mt-2 block w-full",
     autoComplete: "lastname",
     isFocused: true,
@@ -9874,26 +9923,42 @@ function Register() {
     forInput: "password",
     value: "Password"
   }), react_1["default"].createElement(Input_1["default"], {
-    type: "password",
+    type: showPass,
     name: "password",
     value: data.password,
     className: "mt-1 block w-full",
     autoComplete: "new-password",
     handleChange: onHandleChange,
     required: true
-  })), react_1["default"].createElement("div", {
+  }), react_1["default"].createElement("input", {
+    type: "checkbox",
+    id: 'show_password',
+    onChange: function onChange() {
+      return showPass === 'password' ? setShowPass('text') : setShowPass('password');
+    }
+  }), react_1["default"].createElement("label", {
+    htmlFor: 'show_password'
+  }, "Show Password")), react_1["default"].createElement("div", {
     className: "mt-4"
   }, react_1["default"].createElement(Label_1["default"], {
     forInput: "password_confirmation",
     value: "Confirm Password"
   }), react_1["default"].createElement(Input_1["default"], {
-    type: "password",
+    type: showConfirmPass,
     name: "password_confirmation",
     value: data.password_confirmation,
     className: "mt-1 block w-full",
     handleChange: onHandleChange,
     required: true
-  })), react_1["default"].createElement(Button_1["default"], {
+  }), react_1["default"].createElement("input", {
+    type: "checkbox",
+    id: 'show_confirm_password',
+    onChange: function onChange() {
+      return showConfirmPass === 'password' ? setShowConfirmPass('text') : setShowConfirmPass('password');
+    }
+  }), react_1["default"].createElement("label", {
+    htmlFor: 'show_confirm_password'
+  }, "Show Confirmation Password")), react_1["default"].createElement(Button_1["default"], {
     className: "mt-4 block w-full",
     processing: processing
   }, "Register"), react_1["default"].createElement("div", {
@@ -11270,7 +11335,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "#app { height: 100% }\nhtml,\nbody {\n  position: relative;\n  height: 100%;\n}\n\nbody {\n  background: #eee;\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  color: #000;\n  margin: 0;\n  padding: 0;\n}\n\n.swiper {\n  width: 100%;\n  height: 100%;\n}\n\n.swiper-slide {\n  text-align: center;\n  font-size: 18px;\n  background: #fff;\n\n  /* Center slide text vertically */\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\nbody {\n  background: #000;\n  color: #000;\n}\n\n.swiper {\n  width: 100%;\n  height: 300px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.swiper-slide {\n  background-size: cover;\n  background-position: center;\n}\n\n.mySwiper2 {\n  height: 100%;\n  width: 100%;\n}\n\n.mySwiper {\n  height: 20%;\n  box-sizing: border-box;\n  padding: 10px 0;\n}\n\n.mySwiper .swiper-slide {\n  width: 25%;\n  height: 100%;\n  opacity: 0.4;\n}\n\n.mySwiper .swiper-slide-thumb-active {\n  opacity: 1;\n}\n\n.swiper-slide img {\n  display: block;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n.flex-container {\n  display: flex;\n  flex-wrap: wrap;\n  background-color: DodgerBlue;\n  justify-content: center;\n}\n\n.flex-container>div {\n  background-color: #f1f1f1;\n  width: 200px;\n  margin: 100px;\n  text-align: center;\n  line-height: 200px;\n  font-size: 20px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "#app { height: 100% }\r\nhtml,\r\nbody {\r\n  position: relative;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  background: #eee;\r\n  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;\r\n  font-size: 14px;\r\n  color: #000;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\n.swiper {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.swiper-slide {\r\n  text-align: center;\r\n  font-size: 18px;\r\n  background: #fff;\r\n\r\n  /* Center slide text vertically */\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.swiper-slide img {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\nbody {\r\n  background: #000;\r\n  color: #000;\r\n}\r\n\r\n.swiper {\r\n  width: 100%;\r\n  height: 300px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n}\r\n\r\n.swiper-slide {\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\n.mySwiper2 {\r\n  height: 100%;\r\n  width: 100%;\r\n}\r\n\r\n.mySwiper {\r\n  height: 20%;\r\n  box-sizing: border-box;\r\n  padding: 10px 0;\r\n}\r\n\r\n.mySwiper .swiper-slide {\r\n  width: 25%;\r\n  height: 100%;\r\n  opacity: 0.4;\r\n}\r\n\r\n.mySwiper .swiper-slide-thumb-active {\r\n  opacity: 1;\r\n}\r\n\r\n.swiper-slide img {\r\n  display: block;\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\r\n}\r\n\r\n.flex-container {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  background-color: DodgerBlue;\r\n  justify-content: center;\r\n}\r\n\r\n.flex-container>div {\r\n  background-color: #f1f1f1;\r\n  width: 200px;\r\n  margin: 100px;\r\n  text-align: center;\r\n  line-height: 200px;\r\n  font-size: 20px;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -78805,7 +78870,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
+module.exports = JSON.parse('{"_args":[["axios@0.21.4","E:\\\\A_Laravel\\\\Cranium_Phase1"]],"_development":true,"_from":"axios@0.21.4","_id":"axios@0.21.4","_inBundle":false,"_integrity":"sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==","_location":"/axios","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"axios@0.21.4","name":"axios","escapedName":"axios","rawSpec":"0.21.4","saveSpec":null,"fetchSpec":"0.21.4"},"_requiredBy":["#DEV:/","/@inertiajs/inertia","/localtunnel"],"_resolved":"https://registry.npmjs.org/axios/-/axios-0.21.4.tgz","_spec":"0.21.4","_where":"E:\\\\A_Laravel\\\\Cranium_Phase1","author":{"name":"Matt Zabriskie"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"bugs":{"url":"https://github.com/axios/axios/issues"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}],"dependencies":{"follow-redirects":"^1.14.0"},"description":"Promise based HTTP client for the browser and node.js","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"homepage":"https://axios-http.com","jsdelivr":"dist/axios.min.js","keywords":["xhr","http","ajax","promise","node"],"license":"MIT","main":"index.js","name":"axios","repository":{"type":"git","url":"git+https://github.com/axios/axios.git"},"scripts":{"build":"NODE_ENV=production grunt build","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","examples":"node ./examples/server.js","fix":"eslint --fix lib/**/*.js","postversion":"git push && git push --tags","preversion":"npm test","start":"node ./sandbox/server.js","test":"grunt test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json"},"typings":"./index.d.ts","unpkg":"dist/axios.min.js","version":"0.21.4"}');
 
 /***/ })
 

@@ -1,7 +1,6 @@
 import React, {createRef} from 'react';
 import {InertiaLink} from '@inertiajs/inertia-react';
 
-
 export default function Welcome(props: any) {
 
   const navContentRef = createRef<HTMLDivElement>();
