@@ -10425,7 +10425,7 @@ function HomePage(props) {
   }), react_1["default"].createElement("div", {
     className: "rounded-full h-28 w-28 bg-black m-8"
   }), react_1["default"].createElement("div", {
-    className: "rounded-full h-28 w-28 bg-black m-8"
+    className: "rounded-full h-28 w-28  m-8 bg-[url('/img/java.png')] bg-center bg-contain"
   }))), react_1["default"].createElement("div", {
     className: "bg-white"
   }, react_1["default"].createElement("div", {
@@ -10752,9 +10752,35 @@ var SwiperLearning = function SwiperLearning() {
     },
     modules: [swiper_1.FreeMode, swiper_1.Navigation, swiper_1.Thumbs],
     className: "mySwiper2"
-  }, react_1["default"].createElement(react_2.SwiperSlide, null, react_1["default"].createElement("div", {
-    className: "flex-container"
-  }, react_1["default"].createElement("div", null, "1"), react_1["default"].createElement("div", null, "2"), react_1["default"].createElement("div", null, "3"))), react_1["default"].createElement(react_2.SwiperSlide, null, react_1["default"].createElement("div", {
+  }, react_1["default"].createElement(react_2.SwiperSlide, null, react_1["default"].createElement("img", {
+    className: "bg-[url('/img/POWER.jpg')] bg-center bg-cover z-0 absolute"
+  }), react_1["default"].createElement("div", {
+    className: "bg-pink-400 m-4 w-5/6 h-3/6 flex justify-evenly items-center z-10 "
+  }, react_1["default"].createElement("div", {
+    className: "bg-white text-black w-64 h-64 text-center flex justify-around items-center rounded-md "
+  }, react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot"), react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot"), react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot")), react_1["default"].createElement("div", {
+    className: " bg-[url('/img/dare.png')] bg-white w-64 h-64 text-center flex justify-around items-center rounded-md  "
+  }, react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot"), react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot"), react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot")), react_1["default"].createElement("div", {
+    className: "bg-white text-black w-64 h-64 text-center flex justify-around items-center rounded-md "
+  }, react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot"), react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot"), react_1["default"].createElement("div", {
+    className: "bg-black w-16 h-16 text-center text-white rounded-md p-2"
+  }, "Hot")))), react_1["default"].createElement(react_2.SwiperSlide, null, react_1["default"].createElement("div", {
     className: "flex-container"
   }, react_1["default"].createElement("div", null, "1"), react_1["default"].createElement("div", null, "2"))), react_1["default"].createElement(react_2.SwiperSlide, null, react_1["default"].createElement("div", {
     className: "flex-container"

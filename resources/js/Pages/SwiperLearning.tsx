@@ -40,11 +40,28 @@ const SwiperLearning: React.FC = () => {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        <SwiperSlide>
-          <div className="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <SwiperSlide >
+          <img className="bg-[url('/img/POWER.jpg')] bg-center bg-cover z-0 absolute"/>
+          <div className="bg-pink-400 m-4 w-5/6 h-3/6 flex justify-evenly items-center z-10 ">
+
+            <div className="bg-white text-black w-64 h-64 text-center flex justify-around items-center rounded-md ">
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+            </div>
+
+            <div className=" bg-[url('/img/dare.png')] bg-white w-64 h-64 text-center flex justify-around items-center rounded-md  ">
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+            </div>
+
+            <div className="bg-white text-black w-64 h-64 text-center flex justify-around items-center rounded-md ">
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+              <div className="bg-black w-16 h-16 text-center text-white rounded-md p-2">Hot</div>
+            </div>
+
           </div>
         </SwiperSlide>
 
