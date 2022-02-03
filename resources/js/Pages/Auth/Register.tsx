@@ -107,7 +107,7 @@ export default function Register() {
               />
             </div>
 
-            <div className="mt-4">
+            <div className="py-2">
               <Label forInput="password" value="Password"/>
 
               <Input
@@ -119,9 +119,12 @@ export default function Register() {
                 handleChange={onHandleChange}
                 required
               />
-              <input type={"checkbox"} id={'show_password'}
-                     onChange={() => showPass === 'password' ? setShowPass('text') : setShowPass('password')}/>
-              <label htmlFor={'show_password'}>Show Password</label>
+              <input
+                type={"checkbox"}
+                id={'show_password'}
+                className="rounded-md"
+                onChange={() => showPass === 'password' ? setShowPass('text') : setShowPass('password')}/>
+              <label htmlFor={'show_password'} className="text-xs text-gray-700 p-2">Show Password</label>
             </div>
 
             <div className="mt-4">
@@ -135,12 +138,12 @@ export default function Register() {
                 handleChange={onHandleChange}
                 required
               />
-              <input type={"checkbox"} id={'show_confirm_password'}
+              <input type={"checkbox"} id={'show_confirm_password'} className="rounded-md"
                      onChange={() => showConfirmPass === 'password' ? setShowConfirmPass('text') : setShowConfirmPass('password')}/>
-              <label htmlFor={'show_confirm_password'}>Show Confirmation Password</label>
+              <label htmlFor={'show_confirm_password'} className="text-xs text-gray-700 p-2">Show Confirmation Password</label>
             </div>
 
-            <Button className="mt-4 block w-full" processing={processing}>
+            <Button className="w-full mt-4 btn-primary justify-center" processing={processing}>
               Register
             </Button>
 

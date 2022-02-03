@@ -46,11 +46,7 @@ export default function Homepage(props: any) {
               <InertiaLink href=""
                            className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Account Plans</InertiaLink>
             </li>
-            <button className="mr-6 bg-black border-2 border-white rounded ">
-
-              <InertiaLink href="Login"
-                           className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Sign In</InertiaLink>
-            </button>
+              <InertiaLink href="Login" className="btn-secondary">Sign In</InertiaLink>
           </ul>
         </div>
       </nav>
@@ -59,7 +55,7 @@ export default function Homepage(props: any) {
       {/*----*/}
 <div className="bg-white min-h-screen ">
   <div className="h-screen flex flex-wrap justify-center items-center">
-    <div className="w-2/6 p-6 items-center">
+    <div className="w-2/6">
     <h3 className="m-2 text-3xl text-gray-800 font-bold leading-none mb-3">
       About
     </h3>
@@ -147,7 +143,7 @@ export default function Homepage(props: any) {
             <li>Feature 2</li>
             <li>Feature 3</li>
             </div>
-            <InertiaLink href="#" className=" w-52 px-2 py-4 mt-4  border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Learn More</InertiaLink>
+            <InertiaLink href="#" className=" btn-primary">Learn More</InertiaLink>
           </div>
           <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
             <svg className="w-full h-full">
@@ -174,7 +170,7 @@ export default function Homepage(props: any) {
                 <p className="text-center">Feature 3</p>
               </div>
               <div className="h-32 w-64  flex justify-center items-center">
-                <InertiaLink href="#" className=" px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Order Now</InertiaLink>
+                <InertiaLink href="#" className=" btn-primary">Order Now</InertiaLink>
               </div>
             </div>
 
@@ -188,7 +184,7 @@ export default function Homepage(props: any) {
                 <p className="text-center">Feature 3</p>
               </div>
               <div className="h-32 w-64  flex justify-center items-center">
-                <InertiaLink href="#" className=" px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Order Now</InertiaLink>
+                <InertiaLink href="#" className=" btn-primary">Order Now</InertiaLink>
               </div>
             </div>
 
@@ -202,7 +198,7 @@ export default function Homepage(props: any) {
                 <p className="text-center">Feature 3</p>
               </div>
               <div className="h-32 w-64  flex justify-center items-center">
-                <InertiaLink href="#" className=" px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Order Now</InertiaLink>
+                <InertiaLink href="#" className=" btn-primary">Order Now</InertiaLink>
               </div>
             </div>
 
@@ -222,8 +218,8 @@ export default function Homepage(props: any) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h6>
         <div className="flex justify-center items-center">
-        <InertiaLink href="#" className="bg-black w-52 px-2 py-4 mr-6  text-center text-white inline-block rounded shadow hover:text-blue-300">Host an event</InertiaLink>
-        <InertiaLink href="#" className=" w-52 px-2 py-4 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300">Contact us</InertiaLink>
+        <InertiaLink href="#" className="btn-primary mr-4">Host an event</InertiaLink>
+        <InertiaLink href="#" className="btn-secondary">Contact us</InertiaLink>
         </div>
       </div>
 

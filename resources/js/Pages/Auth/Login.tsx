@@ -73,35 +73,31 @@ export default function Login({status, canResetPassword}: Props) {
             />
 
             <label htmlFor={'show_password'}>
-              <input type={"checkbox"} id={'show_password'}
+              <input type={"checkbox"} id={'show_password'} className="rounded-md"
                      onChange={() => showPass === 'password' ? setShowPass('text') : setShowPass('password')}/>
-              Show Password
+              <span className="text-xs text-gray-600 p-2" >Show Password</span>
             </label>
 
-            <div className="block mt-4">
-              <label className="flex items-center">
-                <Checkbox name="remember" value={data.remember} handleChange={onHandleChange}/>
+            <div className=" flex justify-center items-center ">
+              <label >
+                <input type={"checkbox"} className="rounded-md" name="remember" value={data.remember} onChange={onHandleChange}/>
 
-                <span className="ml-4 text-sm text-gray-600">Remember me</span>
+                <span className="text-xs text-gray-600 p-2">Remember me</span>
               </label>
-            </div>
-
-            <div className="flex items-center justify-end mt-4">
               {canResetPassword && (
                 <InertiaLink
                   href={route('password.request')}
-                  className="underline text-sm text-gray-600 hover:text-gray-900"
+                  className="p-2 text-xs text-gray-600 hover:text-gray-900"
                 >
                   Forgot your password?
                 </InertiaLink>
               )}
-
-              <Button className="ml-4" processing={processing}>
+            </div>
+              <Button className="btn-primary justify-center my-4" processing={processing}>
                 Log in
               </Button>
             </div>
           </div>
-        </div>
       </form>
     </nav>
   );

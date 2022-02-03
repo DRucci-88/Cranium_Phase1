@@ -8599,46 +8599,6 @@ exports["default"] = Button;
 
 /***/ }),
 
-/***/ "./resources/js/Components/Checkbox.tsx":
-/*!**********************************************!*\
-  !*** ./resources/js/Components/Checkbox.tsx ***!
-  \**********************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var __importDefault = this && this.__importDefault || function (mod) {
-  return mod && mod.__esModule ? mod : {
-    "default": mod
-  };
-};
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-function Checkbox(_ref) {
-  var name = _ref.name,
-      value = _ref.value,
-      handleChange = _ref.handleChange;
-  return react_1["default"].createElement("input", {
-    type: "checkbox",
-    name: name,
-    value: value,
-    className: "rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
-    onChange: function onChange(e) {
-      return handleChange(e);
-    }
-  });
-}
-
-exports["default"] = Checkbox;
-
-/***/ }),
-
 /***/ "./resources/js/Components/Dropdown.tsx":
 /*!**********************************************!*\
   !*** ./resources/js/Components/Dropdown.tsx ***!
@@ -9617,8 +9577,6 @@ Object.defineProperty(exports, "__esModule", ({
 
 var Button_1 = __importDefault(__webpack_require__(/*! @/Components/Button */ "./resources/js/Components/Button.tsx"));
 
-var Checkbox_1 = __importDefault(__webpack_require__(/*! @/Components/Checkbox */ "./resources/js/Components/Checkbox.tsx"));
-
 var Input_1 = __importDefault(__webpack_require__(/*! @/Components/Input */ "./resources/js/Components/Input.tsx"));
 
 var Label_1 = __importDefault(__webpack_require__(/*! @/Components/Label */ "./resources/js/Components/Label.tsx"));
@@ -9707,28 +9665,29 @@ function Login(_ref) {
   }, react_1["default"].createElement("input", {
     type: "checkbox",
     id: 'show_password',
+    className: "rounded-md",
     onChange: function onChange() {
       return showPass === 'password' ? setShowPass('text') : setShowPass('password');
     }
-  }), "Show Password"), react_1["default"].createElement("div", {
-    className: "block mt-4"
-  }, react_1["default"].createElement("label", {
-    className: "flex items-center"
-  }, react_1["default"].createElement(Checkbox_1["default"], {
+  }), react_1["default"].createElement("span", {
+    className: "text-xs text-gray-600 p-2"
+  }, "Show Password")), react_1["default"].createElement("div", {
+    className: " flex justify-center items-center "
+  }, react_1["default"].createElement("label", null, react_1["default"].createElement("input", {
+    type: "checkbox",
+    className: "rounded-md",
     name: "remember",
     value: data.remember,
-    handleChange: onHandleChange
+    onChange: onHandleChange
   }), react_1["default"].createElement("span", {
-    className: "ml-4 text-sm text-gray-600"
-  }, "Remember me"))), react_1["default"].createElement("div", {
-    className: "flex items-center justify-end mt-4"
-  }, canResetPassword && react_1["default"].createElement(inertia_react_1.InertiaLink, {
+    className: "text-xs text-gray-600 p-2"
+  }, "Remember me")), canResetPassword && react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: (0, ziggy_js_1["default"])('password.request'),
-    className: "underline text-sm text-gray-600 hover:text-gray-900"
-  }, "Forgot your password?"), react_1["default"].createElement(Button_1["default"], {
-    className: "ml-4",
+    className: "p-2 text-xs text-gray-600 hover:text-gray-900"
+  }, "Forgot your password?")), react_1["default"].createElement(Button_1["default"], {
+    className: "btn-primary justify-center my-4",
     processing: processing
-  }, "Log in"))))));
+  }, "Log in")))));
 }
 
 exports["default"] = Login;
@@ -9918,7 +9877,7 @@ function Register() {
     handleChange: onHandleChange,
     required: true
   })), react_1["default"].createElement("div", {
-    className: "mt-4"
+    className: "py-2"
   }, react_1["default"].createElement(Label_1["default"], {
     forInput: "password",
     value: "Password"
@@ -9933,11 +9892,13 @@ function Register() {
   }), react_1["default"].createElement("input", {
     type: "checkbox",
     id: 'show_password',
+    className: "rounded-md",
     onChange: function onChange() {
       return showPass === 'password' ? setShowPass('text') : setShowPass('password');
     }
   }), react_1["default"].createElement("label", {
-    htmlFor: 'show_password'
+    htmlFor: 'show_password',
+    className: "text-xs text-gray-700 p-2"
   }, "Show Password")), react_1["default"].createElement("div", {
     className: "mt-4"
   }, react_1["default"].createElement(Label_1["default"], {
@@ -9953,13 +9914,15 @@ function Register() {
   }), react_1["default"].createElement("input", {
     type: "checkbox",
     id: 'show_confirm_password',
+    className: "rounded-md",
     onChange: function onChange() {
       return showConfirmPass === 'password' ? setShowConfirmPass('text') : setShowConfirmPass('password');
     }
   }), react_1["default"].createElement("label", {
-    htmlFor: 'show_confirm_password'
+    htmlFor: 'show_confirm_password',
+    className: "text-xs text-gray-700 p-2"
   }, "Show Confirmation Password")), react_1["default"].createElement(Button_1["default"], {
-    className: "mt-4 block w-full",
+    className: "w-full mt-4 btn-primary justify-center",
     processing: processing
   }, "Register"), react_1["default"].createElement("div", {
     className: "items-center justify-self: center mt-4 text-center"
@@ -10408,17 +10371,15 @@ function Homepage(props) {
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
-  }, "Account Plans")), react_1["default"].createElement("button", {
-    className: "mr-6 bg-black border-2 border-white rounded "
-  }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
+  }, "Account Plans")), react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "Login",
-    className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
-  }, "Sign In"))))), react_1["default"].createElement("div", {
+    className: "btn-secondary"
+  }, "Sign In")))), react_1["default"].createElement("div", {
     className: "bg-white min-h-screen "
   }, react_1["default"].createElement("div", {
     className: "h-screen flex flex-wrap justify-center items-center"
   }, react_1["default"].createElement("div", {
-    className: "w-2/6 p-6 items-center"
+    className: "w-2/6"
   }, react_1["default"].createElement("h3", {
     className: "m-2 text-3xl text-gray-800 font-bold leading-none mb-3"
   }, "About"), react_1["default"].createElement("p", {
@@ -10521,7 +10482,7 @@ function Homepage(props) {
     className: "py-4"
   }, react_1["default"].createElement("li", null, "Feature 1"), react_1["default"].createElement("li", null, "Feature 2"), react_1["default"].createElement("li", null, "Feature 3")), react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: " w-52 px-2 py-4 mt-4  border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300"
+    className: " btn-primary"
   }, "Learn More")), react_1["default"].createElement("div", {
     className: "w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2"
   }, react_1["default"].createElement("svg", {
@@ -10562,7 +10523,7 @@ function Homepage(props) {
     className: "h-32 w-64  flex justify-center items-center"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: " px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300"
+    className: " btn-primary"
   }, "Order Now"))), react_1["default"].createElement("div", {
     className: "bg-gray-100 rounded-lg m-4 border-2 border-black"
   }, react_1["default"].createElement("div", {
@@ -10583,7 +10544,7 @@ function Homepage(props) {
     className: "h-32 w-64  flex justify-center items-center"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: " px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300"
+    className: " btn-primary"
   }, "Order Now"))), react_1["default"].createElement("div", {
     className: "bg-gray-100 rounded-lg m-4 border-2 border-black"
   }, react_1["default"].createElement("div", {
@@ -10604,7 +10565,7 @@ function Homepage(props) {
     className: "h-32 w-64  flex justify-center items-center"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: " px-6 py-2 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300"
+    className: " btn-primary"
   }, "Order Now")))))), react_1["default"].createElement("div", {
     className: "bg-gray-100 h-screen flex flex-col justify-center items-center"
   }, react_1["default"].createElement("h1", {
@@ -10615,10 +10576,10 @@ function Homepage(props) {
     className: "flex justify-center items-center"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: "bg-black w-52 px-2 py-4 mr-6  text-center text-white inline-block rounded shadow hover:text-blue-300"
+    className: "btn-primary mr-4"
   }, "Host an event"), react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: " w-52 px-2 py-4 border-2 border-black text-center text-black inline-block rounded shadow hover:text-blue-300"
+    className: "btn-secondary"
   }, "Contact us"))), react_1["default"].createElement("div", {
     className: "bg-gray-300"
   }, react_1["default"].createElement("div", {
