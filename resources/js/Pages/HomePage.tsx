@@ -1,9 +1,10 @@
 import React, {createRef} from 'react';
 import {InertiaLink} from '@inertiajs/inertia-react';
+import route from "ziggy-js";
 
 
 
-export default function Homepage(props: any) {
+export default function HomePage(props: any) {
 
   const navContentRef = createRef<HTMLDivElement>();
 
@@ -46,7 +47,7 @@ export default function Homepage(props: any) {
               <InertiaLink href=""
                            className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Account Plans</InertiaLink>
             </li>
-              <InertiaLink href="Login" className="btn-secondary">Sign In</InertiaLink>
+              <InertiaLink href={route('register')} className="btn-secondary">Register</InertiaLink>
           </ul>
         </div>
       </nav>

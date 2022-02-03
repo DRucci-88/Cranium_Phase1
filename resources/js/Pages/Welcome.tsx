@@ -10,7 +10,7 @@ export default function Welcome(props: any) {
   }
   return (
     <div className="bg-white font-sans leading-normal tracking-normal">
-      <nav className="flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t">
+      <nav className="flex items-center justify-between flex-wrap bg-primary-500 p-3 fixed w-full z-10 top-0 pin-t">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <InertiaLink href="/" className="text-white no-underline hover:text-white hover:no-underline">
             <span className="text-2xl pl-2 font-semibold">Cranium</span></InertiaLink>
@@ -46,7 +46,7 @@ export default function Welcome(props: any) {
 
       {/* Hero */}
 
-      <div className="bg-primary h-screen flex flex-col justify-center items-center">
+      <div className="bg-white h-screen flex flex-col justify-center items-center">
         <h1 className="text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center">
           At eripuit signiferumque sea, vel ad mucius eiusmod.
         </h1>
@@ -60,28 +60,28 @@ export default function Welcome(props: any) {
 
       {/* Services */}
 
-      <div className="bg-secondary flex flex-col justify-center items-center py-12">
-        <h4 className="text-2xl md:text-4xl text-black font-bold text-center">
+      <div className="bg-primary-500 flex flex-col justify-center items-center py-12">
+        <h4 className="text-2xl md:text-4xl text-white font-bold text-center">
           Services
         </h4>
-        <p className="text-lg md:text-xl text-gray-400 max-w-screen-md text-center mb-8">
+        <p className="text-md md:text-xl text-neutral-300 max-w-screen-md text-center mb-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div className="flex justify-center">
           <div className="flex flex-col items-center max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-2">img</div>
-            <p className="text-lg font-bold mb-2">Service 1</p>
-            <p className="text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="text-lg text-white font-bold mb-2">Service 1</p>
+            <p className="text-neutral-300 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="flex flex-col items-center max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-2">img</div>
-            <p className="text-lg font-bold mb-2">Service 2</p>
-            <p className="text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="text-lg text-white font-bold mb-2">Service 2</p>
+            <p className="text-neutral-300 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="flex flex-col items-center max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-2">img</div>
-            <p className="text-lg font-bold mb-2">Service 3</p>
-            <p className="text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p className="text-lg text-white font-bold mb-2">Service 3</p>
+            <p className="text-neutral-300 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default function Welcome(props: any) {
     </div>
 
       {/*-----*/}
-      <div className="bg-gray-300">
+      <div className="bg-primary-500">
       <div className="container max-w-5xl mx-auto m-8">
         <div className="flex flex-wrap">
           <div className="w-full sm:w-1/2 p-4">
@@ -119,15 +119,15 @@ export default function Welcome(props: any) {
               <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
             </svg>
           </div>
-          <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
-            <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
+          <div className="w-3/6 sm:w-1/2 p-4 flex flex-col justify-center sm:justify-center">
+            <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
               Get in touch
             </h3>
-            <p className="m-6 text-gray-600 mb-4">
+            <p className="m-2 text-neutral-300 mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
               amet ligula.
             </p>
-            <button className=" m-6 bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300">Contact Us</button>
+            <button className="m-2 btn-primary w-1/2 ">Contact Us</button>
           </div>
         </div>
       </div>
@@ -145,38 +145,38 @@ export default function Welcome(props: any) {
       </div>
       </div>
 
-      <div className="bg-gray-300">
+      <div className="bg-primary-500">
         <div className="container mx-auto px-8">
           <div className="w-full flex flex-col md:flex-row py-6">
-            <div className="flex-1 mb-6 text-black">
-              <InertiaLink className="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">CRANIUM</InertiaLink>
-              <p className="mt-4 text-gray-500 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED</p>
+            <div className="flex-1 mb-6 text-white">
+              <InertiaLink className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">CRANIUM</InertiaLink>
+              <p className="mt-4 text-white no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED</p>
               <p className="mt-4 text-grey-500 no-underline hover:no-underline text-xs">Privacy — Terms</p>
             </div>
 
 
             <div className="flex-1">
-              <p className="uppercase text-gray-500 md:mb-6">Contact</p>
+              <p className="uppercase text-white md:mb-6">Contact</p>
               <ul className="list-reset mb-6">
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Phone Number</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Phone Number</InertiaLink>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Email</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Email</InertiaLink>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Social Media</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Social Media</InertiaLink>
                 </li>
               </ul>
             </div>
             <div className="flex-1">
-              <p className="uppercase text-gray-500 md:mb-6">Company</p>
+              <p className="uppercase text-white md:mb-6">Company</p>
               <ul className="list-reset mb-6">
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Terms</a>
+                  <a href="#" className="no-underline hover:underline text-white hover:text-pink-500">Terms</a>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Privacy</a>
+                  <a href="#" className="no-underline hover:underline text-white hover:text-pink-500">Privacy</a>
                 </li>
               </ul>
             </div>

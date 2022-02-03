@@ -10269,9 +10269,9 @@ exports["default"] = HomeDashboard;
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Homepage.tsx":
+/***/ "./resources/js/Pages/HomePage.tsx":
 /*!*****************************************!*\
-  !*** ./resources/js/Pages/Homepage.tsx ***!
+  !*** ./resources/js/Pages/HomePage.tsx ***!
   \*****************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
@@ -10312,6 +10312,12 @@ var __importStar = this && this.__importStar || function (mod) {
   return result;
 };
 
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
@@ -10320,7 +10326,9 @@ var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/reac
 
 var inertia_react_1 = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 
-function Homepage(props) {
+var ziggy_js_1 = __importDefault(__webpack_require__(/*! ziggy-js */ "./node_modules/ziggy-js/dist/index.js"));
+
+function HomePage(props) {
   var navContentRef = (0, react_1.createRef)();
 
   var navToggle = function navToggle() {
@@ -10372,9 +10380,9 @@ function Homepage(props) {
     href: "",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
   }, "Account Plans")), react_1["default"].createElement(inertia_react_1.InertiaLink, {
-    href: "Login",
+    href: (0, ziggy_js_1["default"])('register'),
     className: "btn-secondary"
-  }, "Sign In")))), react_1["default"].createElement("div", {
+  }, "Register")))), react_1["default"].createElement("div", {
     className: "bg-white min-h-screen "
   }, react_1["default"].createElement("div", {
     className: "h-screen flex flex-wrap justify-center items-center"
@@ -10635,7 +10643,7 @@ function Homepage(props) {
   }, "Privacy"))))))));
 }
 
-exports["default"] = Homepage;
+exports["default"] = HomePage;
 
 /***/ }),
 
@@ -10820,7 +10828,7 @@ function Welcome(props) {
   return react_1["default"].createElement("div", {
     className: "bg-white font-sans leading-normal tracking-normal"
   }, react_1["default"].createElement("nav", {
-    className: "flex items-center justify-between flex-wrap bg-black p-3 fixed w-full z-10 top-0 pin-t"
+    className: "flex items-center justify-between flex-wrap bg-primary-500 p-3 fixed w-full z-10 top-0 pin-t"
   }, react_1["default"].createElement("div", {
     className: "flex items-center flex-shrink-0 text-white mr-6"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
@@ -10860,7 +10868,7 @@ function Welcome(props) {
     href: "",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
   }, "Contact"))))), react_1["default"].createElement("div", {
-    className: "bg-primary h-screen flex flex-col justify-center items-center"
+    className: "bg-white h-screen flex flex-col justify-center items-center"
   }, react_1["default"].createElement("h1", {
     className: "text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center"
   }, "At eripuit signiferumque sea, vel ad mucius eiusmod."), react_1["default"].createElement("p", {
@@ -10869,11 +10877,11 @@ function Welcome(props) {
     href: "#",
     className: "btn-primary"
   }, "Join an event")), react_1["default"].createElement("div", {
-    className: "bg-secondary flex flex-col justify-center items-center py-12"
+    className: "bg-primary-500 flex flex-col justify-center items-center py-12"
   }, react_1["default"].createElement("h4", {
-    className: "text-2xl md:text-4xl text-black font-bold text-center"
+    className: "text-2xl md:text-4xl text-white font-bold text-center"
   }, "Services"), react_1["default"].createElement("p", {
-    className: "text-lg md:text-xl text-gray-400 max-w-screen-md text-center mb-8"
+    className: "text-md md:text-xl text-neutral-300 max-w-screen-md text-center mb-8"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react_1["default"].createElement("div", {
     className: "flex justify-center"
   }, react_1["default"].createElement("div", {
@@ -10881,25 +10889,25 @@ function Welcome(props) {
   }, react_1["default"].createElement("div", {
     className: "bg-gray-100 w-10 h-10 mb-2"
   }, "img"), react_1["default"].createElement("p", {
-    className: "text-lg font-bold mb-2"
+    className: "text-lg text-white font-bold mb-2"
   }, "Service 1"), react_1["default"].createElement("p", {
-    className: "text-gray-400 text-center"
+    className: "text-neutral-300 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), react_1["default"].createElement("div", {
     className: "flex flex-col items-center max-w-xs my-4"
   }, react_1["default"].createElement("div", {
     className: "bg-gray-100 w-10 h-10 mb-2"
   }, "img"), react_1["default"].createElement("p", {
-    className: "text-lg font-bold mb-2"
+    className: "text-lg text-white font-bold mb-2"
   }, "Service 2"), react_1["default"].createElement("p", {
-    className: "text-gray-400 text-center"
+    className: "text-neutral-300 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), react_1["default"].createElement("div", {
     className: "flex flex-col items-center max-w-xs my-4"
   }, react_1["default"].createElement("div", {
     className: "bg-gray-100 w-10 h-10 mb-2"
   }, "img"), react_1["default"].createElement("p", {
-    className: "text-lg font-bold mb-2"
+    className: "text-lg text-white font-bold mb-2"
   }, "Service 3"), react_1["default"].createElement("p", {
-    className: "text-gray-400 text-center"
+    className: "text-neutral-300 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")))), react_1["default"].createElement("div", {
     className: "bg-white"
   }, react_1["default"].createElement("div", {
@@ -10926,7 +10934,7 @@ function Welcome(props) {
     rx: "20.42",
     fill: "#f2f2f2"
   })))))), react_1["default"].createElement("div", {
-    className: "bg-gray-300"
+    className: "bg-primary-500"
   }, react_1["default"].createElement("div", {
     className: "container max-w-5xl mx-auto m-8"
   }, react_1["default"].createElement("div", {
@@ -10945,13 +10953,13 @@ function Welcome(props) {
     rx: "20.42",
     fill: "#f2f2f2"
   }))), react_1["default"].createElement("div", {
-    className: "w-5/6 sm:w-1/2 p-4 items-center sm:items-center"
+    className: "w-3/6 sm:w-1/2 p-4 flex flex-col justify-center sm:justify-center"
   }, react_1["default"].createElement("h3", {
-    className: "m-6 text-3xl text-gray-800 font-bold leading-none mb-3"
+    className: "m-2 text-3xl text-white font-bold leading-none mb-3"
   }, "Get in touch"), react_1["default"].createElement("p", {
-    className: "m-6 text-gray-600 mb-4"
+    className: "m-2 text-neutral-300 mb-4"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula."), react_1["default"].createElement("button", {
-    className: " m-6 bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300"
+    className: "m-2 btn-primary w-1/2 "
   }, "Contact Us"))))), react_1["default"].createElement("div", {
     className: "bg-white"
   }, react_1["default"].createElement("div", {
@@ -10961,57 +10969,57 @@ function Welcome(props) {
   }, "\u201CLorem ipsum dolor sit amet, consectetur adipiscing elit.\u201D"), react_1["default"].createElement("p", {
     className: "mt-4 tracking-[.3em] text-xl leading-tight text-gray-400"
   }, "- CRANIUM -"))), react_1["default"].createElement("div", {
-    className: "bg-gray-300"
+    className: "bg-primary-500"
   }, react_1["default"].createElement("div", {
     className: "container mx-auto px-8"
   }, react_1["default"].createElement("div", {
     className: "w-full flex flex-col md:flex-row py-6"
   }, react_1["default"].createElement("div", {
-    className: "flex-1 mb-6 text-black"
+    className: "flex-1 mb-6 text-white"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
-    className: "text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl",
+    className: "text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl",
     href: "#"
   }, "CRANIUM"), react_1["default"].createElement("p", {
-    className: "mt-4 text-gray-500 no-underline hover:no-underline text-xs"
+    className: "mt-4 text-white no-underline hover:no-underline text-xs"
   }, "\xA9 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED"), react_1["default"].createElement("p", {
     className: "mt-4 text-grey-500 no-underline hover:no-underline text-xs"
   }, "Privacy \u2014 Terms")), react_1["default"].createElement("div", {
     className: "flex-1"
   }, react_1["default"].createElement("p", {
-    className: "uppercase text-gray-500 md:mb-6"
+    className: "uppercase text-white md:mb-6"
   }, "Contact"), react_1["default"].createElement("ul", {
     className: "list-reset mb-6"
   }, react_1["default"].createElement("li", {
     className: "mt-2 inline-block mr-2 md:block md:mr-0"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+    className: "no-underline hover:underline text-white hover:text-pink-500"
   }, "Phone Number")), react_1["default"].createElement("li", {
     className: "mt-2 inline-block mr-2 md:block md:mr-0"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+    className: "no-underline hover:underline text-white hover:text-pink-500"
   }, "Email")), react_1["default"].createElement("li", {
     className: "mt-2 inline-block mr-2 md:block md:mr-0"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
     href: "#",
-    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+    className: "no-underline hover:underline text-white hover:text-pink-500"
   }, "Social Media")))), react_1["default"].createElement("div", {
     className: "flex-1"
   }, react_1["default"].createElement("p", {
-    className: "uppercase text-gray-500 md:mb-6"
+    className: "uppercase text-white md:mb-6"
   }, "Company"), react_1["default"].createElement("ul", {
     className: "list-reset mb-6"
   }, react_1["default"].createElement("li", {
     className: "mt-2 inline-block mr-2 md:block md:mr-0"
   }, react_1["default"].createElement("a", {
     href: "#",
-    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+    className: "no-underline hover:underline text-white hover:text-pink-500"
   }, "Terms")), react_1["default"].createElement("li", {
     className: "mt-2 inline-block mr-2 md:block md:mr-0"
   }, react_1["default"].createElement("a", {
     href: "#",
-    className: "no-underline hover:underline text-gray-800 hover:text-pink-500"
+    className: "no-underline hover:underline text-white hover:text-pink-500"
   }, "Privacy"))))))));
 }
 
@@ -64908,8 +64916,8 @@ var map = {
 	"./Dashboard.tsx": "./resources/js/Pages/Dashboard.tsx",
 	"./HomeDashboard": "./resources/js/Pages/HomeDashboard.tsx",
 	"./HomeDashboard.tsx": "./resources/js/Pages/HomeDashboard.tsx",
-	"./Homepage": "./resources/js/Pages/Homepage.tsx",
-	"./Homepage.tsx": "./resources/js/Pages/Homepage.tsx",
+	"./HomePage": "./resources/js/Pages/HomePage.tsx",
+	"./HomePage.tsx": "./resources/js/Pages/HomePage.tsx",
 	"./SwiperLearning": "./resources/js/Pages/SwiperLearning.tsx",
 	"./SwiperLearning.tsx": "./resources/js/Pages/SwiperLearning.tsx",
 	"./Welcome": "./resources/js/Pages/Welcome.tsx",

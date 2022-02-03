@@ -1,5 +1,4 @@
 import Button from '@/Components/Button';
-import Checkbox from '@/Components/Checkbox';
 import Input from '@/Components/Input';
 import Label from '@/Components/Label';
 import React, {useEffect, useState} from 'react';

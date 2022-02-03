@@ -35,4 +35,4 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::get('/homepage', function () {
-    return Inertia::render('Homepage');});
+    return Inertia::render('HomePage');});
