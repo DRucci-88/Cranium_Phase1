@@ -12,11 +12,22 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['Open Sans', 'Nunito', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                'primary': '#392C4F',
-                'secondary': '#52E2C0'
+                'primary': {
+                  '100': '#876FAF',
+                  '300': '#5F4983',
+                  '500': '#392C4F',
+                  '700': '#0E0B14'
+                },
+                'secondary': {
+                  '100': '#DEF9F3',
+                  '300': '#96EED9',
+                  '500': '#52E2C0',
+                  '700': '#1FB995',
+                  '900': '#126B56'
+                }
             },
         },
     },

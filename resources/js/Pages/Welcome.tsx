@@ -48,14 +48,14 @@ export default function Welcome(props: any) {
       {/* Hero */}
 
       <div className="bg-primary h-screen flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-6xl font-black mb-4 max-w-screen-lg text-center">
+        <h1 className="text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center">
           At eripuit signiferumque sea, vel ad mucius eiusmod.
         </h1>
-        <h6 className="text-xl md:text-2xl text-gray-400 mb-8 max-w-screen-md text-center">
+        <p className="text-base md:text-lg text-gray-400 mb-8 max-w-screen-md text-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </h6>
+        </p>
 
-        <InertiaLink href="#" className="bg-black px-8 py-4 text-white inline-block rounded shadow hover:text-blue-300">CTA</InertiaLink>
+        <InertiaLink href="#" className="btn-primary">Join an event</InertiaLink>
 
       </div>
 
@@ -121,7 +121,7 @@ export default function Welcome(props: any) {
           </div>
           <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
             <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
-              Get In Touch
+              Get in touch
             </h3>
             <p className="m-6 text-gray-600 mb-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
