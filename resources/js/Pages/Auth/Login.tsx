@@ -11,7 +11,9 @@ interface Props {
   status: string;
   canResetPassword: boolean;
 }
+
 type showPass = 'password' | 'text';
+
 export default function Login({status, canResetPassword}: Props) {
 
   const [showPass, setShowPass] = useState<showPass>('password');

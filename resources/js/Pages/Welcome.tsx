@@ -13,7 +13,8 @@ export default function Welcome(props: any) {
       <nav className="flex items-center justify-between flex-wrap bg-primary-500 p-3 fixed w-full z-10 top-0 pin-t">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <InertiaLink href="/" className="text-white no-underline hover:text-white hover:no-underline">
-            <span className="text-2xl pl-2 font-semibold">Cranium</span></InertiaLink>
+            <span className="text-2xl pl-2 font-semibold">Cranium</span>
+          </InertiaLink>
         </div>
 
         <div className="block lg:hidden">
@@ -29,16 +30,19 @@ export default function Welcome(props: any) {
         {/* Navbar */}
 
         <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0"
-            ref={navContentRef}>
+             ref={navContentRef}>
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-6">
-              <InertiaLink href="" className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Services</InertiaLink>
+              <InertiaLink href=""
+                           className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Services</InertiaLink>
             </li>
             <li className="mr-6">
-              <InertiaLink href="" className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Features</InertiaLink>
+              <InertiaLink href=""
+                           className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Features</InertiaLink>
             </li>
             <li className="mr-6">
-              <InertiaLink href="" className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Contact</InertiaLink>
+              <InertiaLink href=""
+                           className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Contact</InertiaLink>
             </li>
           </ul>
         </div>
@@ -88,69 +92,71 @@ export default function Welcome(props: any) {
 
       {/*bagian features*/}
       <div className="bg-white">
-      <div className="container max-w-5xl mx-auto m-8">
-        <div className="flex flex-wrap">
-          <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
-            <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
-              Lorem ipsum dolor sit amet
-            </h3>
-            <p className="m-6 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
-            </p>
-          </div>
-          <div className="w-full sm:w-1/2 p-4">
-            <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
-              <title>Image</title>
-              <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2" />
-            </svg>
+        <div className="container max-w-5xl mx-auto m-8">
+          <div className="flex flex-wrap">
+            <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
+              <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
+                Lorem ipsum dolor sit amet
+              </h3>
+              <p className="m-6 text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
+                amet ligula.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 p-4">
+              <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
+                <title>Image</title>
+                <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       {/*-----*/}
       <div className="bg-primary-500">
-      <div className="container max-w-5xl mx-auto m-8">
-        <div className="flex flex-wrap">
-          <div className="w-full sm:w-1/2 p-4">
-            <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
-              <title>Image</title>
-              <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
-            </svg>
-          </div>
-          <div className="w-3/6 sm:w-1/2 p-4 flex flex-col justify-center sm:justify-center">
-            <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
-              Get in touch
-            </h3>
-            <p className="m-2 text-neutral-300 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
-            </p>
-            <button className="m-2 btn-primary w-1/2 ">Contact Us</button>
+        <div className="container max-w-5xl mx-auto m-8">
+          <div className="flex flex-wrap">
+            <div className="w-full sm:w-1/2 p-4">
+              <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
+                <title>Image</title>
+                <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
+              </svg>
+            </div>
+            <div className="w-3/6 sm:w-1/2 p-4 flex flex-col justify-center sm:justify-center">
+              <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
+                Get in touch
+              </h3>
+              <p className="m-2 text-neutral-300 mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
+                amet ligula.
+              </p>
+              <button className="m-2 btn-primary w-1/2 ">Contact Us</button>
+            </div>
           </div>
         </div>
-      </div>
       </div>
 
       {/*Footer*/}
       <div className="bg-white">
-      <div className="container mx-auto text-center py-20">
-        <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-black">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
-        </h3>
-        <p className="mt-4 tracking-[.3em] text-xl leading-tight text-gray-400">
-          - CRANIUM -
-        </p>
-      </div>
+        <div className="container mx-auto text-center py-20">
+          <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-black">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
+          </h3>
+          <p className="mt-4 tracking-[.3em] text-xl leading-tight text-gray-400">
+            - CRANIUM -
+          </p>
+        </div>
       </div>
 
       <div className="bg-primary-500">
         <div className="container mx-auto px-8">
           <div className="w-full flex flex-col md:flex-row py-6">
             <div className="flex-1 mb-6 text-white">
-              <InertiaLink className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">CRANIUM</InertiaLink>
-              <p className="mt-4 text-white no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED</p>
+              <InertiaLink className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                           href="#">CRANIUM</InertiaLink>
+              <p className="mt-4 text-white no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL
+                RIGHTS RESERVED</p>
               <p className="mt-4 text-grey-500 no-underline hover:no-underline text-xs">Privacy — Terms</p>
             </div>
 
@@ -159,13 +165,16 @@ export default function Welcome(props: any) {
               <p className="uppercase text-white md:mb-6">Contact</p>
               <ul className="list-reset mb-6">
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Phone Number</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Phone
+                    Number</InertiaLink>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Email</InertiaLink>
+                  <InertiaLink href="#"
+                               className="no-underline hover:underline text-white hover:text-pink-500">Email</InertiaLink>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Social Media</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-white hover:text-pink-500">Social
+                    Media</InertiaLink>
                 </li>
               </ul>
             </div>

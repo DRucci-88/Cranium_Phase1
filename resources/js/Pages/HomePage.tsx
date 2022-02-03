@@ -3,6 +3,7 @@ import {InertiaLink} from '@inertiajs/inertia-react';
 import route from "ziggy-js";
 
 
+
 export default function HomePage(props: any) {
 
   const navContentRef = createRef<HTMLDivElement>();
@@ -44,57 +45,54 @@ export default function HomePage(props: any) {
             </li>
             <li className="mr-6">
               <InertiaLink href=""
-                           className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Account
-                Plans</InertiaLink>
+                           className="inline-block py-2 px-2 text-white no-underline hover:text-blue-300">Account Plans</InertiaLink>
             </li>
-            <InertiaLink href={route('register')} className="btn-secondary">Register</InertiaLink>
+              <InertiaLink href={route('register')} className="btn-secondary">Register</InertiaLink>
           </ul>
         </div>
       </nav>
 
 
       {/*----*/}
-      <div className="bg-white min-h-screen ">
-        <div className="h-screen flex flex-wrap justify-center items-center">
-          <div className="w-2/6">
-            <h3 className="m-2 text-3xl text-gray-800 font-bold leading-none mb-3">
-              About
-            </h3>
-            <p className="m-2 text-gray-600 py-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-            <InertiaLink href="#" className="btn-primary mr-4">Join an event</InertiaLink>
-            <InertiaLink href="#" className="btn-secondary">Host an event</InertiaLink>
-          </div>
-          <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
-            <svg className="w-full h-full">
-              <title>Image</title>
-              <rect width="100%" display="block" height="100%" rx="15" fill="#f2f2f2"/>
-            </svg>
-          </div>
-        </div>
-      </div>
+<div className="bg-white min-h-screen ">
+  <div className="h-screen flex flex-wrap justify-center items-center">
+    <div className="w-2/6">
+    <h3 className="m-2 text-3xl text-gray-800 font-bold leading-none mb-3">
+      About
+    </h3>
+    <p className="m-2 text-gray-600 py-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+      <InertiaLink href="#" className="btn-primary mr-4">Join an event</InertiaLink>
+      <InertiaLink href="#" className="btn-secondary">Host an event</InertiaLink>
+    </div>
+    <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
+      <svg className="w-full h-full">
+        <title>Image</title>
+        <rect   width="100%" display="block" height="100%" rx="15" fill="#f2f2f2" />
+      </svg>
+    </div>
+  </div>
+</div>
 
       {/*----*/}
       <div className="bg-gray-200">
         <h2 className="text-center text-2xl font-bold py-6"> Our Client</h2>
         <div className="flex justify-center">
+        <div className="rounded-full h-28 w-28 bg-black m-8"></div>
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
           <div className="rounded-full h-28 w-28 bg-black m-8"></div>
-          <div className="rounded-full h-28 w-28 bg-black m-8"></div>
-          <div className="rounded-full h-28 w-28  m-8 bg-[url('/img/java.png')] bg-center bg-contain"></div>
-        </div>
+          <div className="rounded-full h-28 w-28 bg-black m-8" ></div>
+      </div>
       </div>
 
       {/*------*/}
       <div className="bg-white">
         <div className="h-screen">
-          <h1 className="py-4 text-2xl font-bold text-black text-center">Events</h1>
-          <p className="py-6 mb-4 text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <h1 className="py-4 text-2xl font-bold text-black text-center">Events</h1>
+        <p className="py-6 mb-4 text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div className="flex justify-center items-center">
             <div className="bg-gray-100 rounded-lg m-4">
               <div className="h-64 w-64"></div>
@@ -139,20 +137,19 @@ export default function HomePage(props: any) {
               Features
             </h3>
             <p className="m-2 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="py-4">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
             </div>
             <InertiaLink href="#" className=" btn-primary">Learn More</InertiaLink>
           </div>
           <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
             <svg className="w-full h-full">
               <title>Image</title>
-              <rect width="100%" display="block" height="100%" rx="15" fill="white"/>
+              <rect   width="100%" display="block" height="100%" rx="15" fill="white" />
             </svg>
           </div>
         </div>
@@ -162,8 +159,7 @@ export default function HomePage(props: any) {
       <div className="bg-white">
         <div className="h-screen">
           <h1 className="py-4 text-2xl font-bold text-black text-center">Account Plans</h1>
-          <p className="py-6 mb-4 text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className="py-6 mb-4 text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div className="flex justify-center items-center ">
             <div className="bg-gray-100 rounded-lg m-4 border-2 border-black">
               <div className="h-64 w-64 flex flex-col justify-center items-center">
@@ -208,6 +204,7 @@ export default function HomePage(props: any) {
             </div>
 
 
+
           </div>
         </div>
       </div>
@@ -222,8 +219,8 @@ export default function HomePage(props: any) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </h6>
         <div className="flex justify-center items-center">
-          <InertiaLink href="#" className="btn-primary mr-4">Host an event</InertiaLink>
-          <InertiaLink href="#" className="btn-secondary">Contact us</InertiaLink>
+        <InertiaLink href="#" className="btn-primary mr-4">Host an event</InertiaLink>
+        <InertiaLink href="#" className="btn-secondary">Contact us</InertiaLink>
         </div>
       </div>
 
@@ -233,10 +230,8 @@ export default function HomePage(props: any) {
         <div className="container mx-auto px-8">
           <div className="w-full flex flex-col md:flex-row py-6">
             <div className="flex-1 mb-6 text-black">
-              <InertiaLink className="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                           href="#">CRANIUM</InertiaLink>
-              <p className="mt-4 text-gray-500 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL
-                RIGHTS RESERVED</p>
+              <InertiaLink className="text-black no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">CRANIUM</InertiaLink>
+              <p className="mt-4 text-gray-500 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL RIGHTS RESERVED</p>
               <p className="mt-4 text-grey-500 no-underline hover:no-underline text-xs">Privacy — Terms</p>
             </div>
 
@@ -245,16 +240,13 @@ export default function HomePage(props: any) {
               <p className="uppercase text-gray-500 md:mb-6">Contact</p>
               <ul className="list-reset mb-6">
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Phone
-                    Number</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Phone Number</InertiaLink>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#"
-                               className="no-underline hover:underline text-gray-800 hover:text-pink-500">Email</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Email</InertiaLink>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Social
-                    Media</InertiaLink>
+                  <InertiaLink href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500">Social Media</InertiaLink>
                 </li>
               </ul>
             </div>
