@@ -10894,9 +10894,9 @@ function Welcome(props) {
     href: "",
     className: "inline-block py-2 px-2 text-white no-underline hover:text-blue-300"
   }, "Contact"))))), react_1["default"].createElement("div", {
-    className: "bg-white h-screen flex flex-col justify-center items-center"
+    className: "bg-white h-screen sm:h-screen flex flex-col justify-center items-center"
   }, react_1["default"].createElement("h1", {
-    className: "text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center"
+    className: "text-3xl sm:text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center"
   }, "At eripuit signiferumque sea, vel ad mucius eiusmod."), react_1["default"].createElement("p", {
     className: "text-base md:text-lg text-gray-400 mb-8 max-w-screen-md text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react_1["default"].createElement(inertia_react_1.InertiaLink, {
@@ -10911,7 +10911,7 @@ function Welcome(props) {
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit."), react_1["default"].createElement("div", {
     className: "flex justify-center"
   }, react_1["default"].createElement("div", {
-    className: "flex flex-col items-center max-w-xs my-4"
+    className: " text-md md:text-xl flex flex-col items-center max-w-xs my-4"
   }, react_1["default"].createElement("div", {
     className: "bg-gray-100 w-10 h-10 mb-2"
   }, "img"), react_1["default"].createElement("p", {
@@ -10919,7 +10919,7 @@ function Welcome(props) {
   }, "Service 1"), react_1["default"].createElement("p", {
     className: "text-neutral-300 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), react_1["default"].createElement("div", {
-    className: "flex flex-col items-center max-w-xs my-4"
+    className: "text-md md:text-xl flex flex-col items-center max-w-xs my-4"
   }, react_1["default"].createElement("div", {
     className: "bg-gray-100 w-10 h-10 mb-2"
   }, "img"), react_1["default"].createElement("p", {
@@ -10927,7 +10927,7 @@ function Welcome(props) {
   }, "Service 2"), react_1["default"].createElement("p", {
     className: "text-neutral-300 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")), react_1["default"].createElement("div", {
-    className: "flex flex-col items-center max-w-xs my-4"
+    className: "text-md md:text-xl flex flex-col items-center max-w-xs my-4"
   }, react_1["default"].createElement("div", {
     className: "bg-gray-100 w-10 h-10 mb-2"
   }, "img"), react_1["default"].createElement("p", {
@@ -10955,9 +10955,9 @@ function Welcome(props) {
     rx: "15",
     fill: "#f2f2f2"
   }))))), react_1["default"].createElement("div", {
-    className: "bg-primary-300 min-h-screen "
+    className: "bg-primary-300 h-screen 2xl:h-screen"
   }, react_1["default"].createElement("div", {
-    className: "h-screen flex flex-wrap justify-center items-center"
+    className: "h-5/6 2xl:h-screen flex flex-col 2xl:flex-row justify-center items-center"
   }, react_1["default"].createElement("div", {
     className: "w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-6"
   }, react_1["default"].createElement("svg", {

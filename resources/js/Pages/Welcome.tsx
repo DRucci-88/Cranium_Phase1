@@ -50,8 +50,8 @@ export default function Welcome(props: any) {
 
       {/* Hero */}
 
-      <div className="bg-white h-screen flex flex-col justify-center items-center">
-        <h1 className="text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center">
+      <div className="bg-white h-screen sm:h-screen flex flex-col justify-center items-center">
+        <h1 className="text-3xl sm:text-3xl md:text-5xl font-black mb-4 max-w-screen-lg text-center">
           At eripuit signiferumque sea, vel ad mucius eiusmod.
         </h1>
         <p className="text-base md:text-lg text-gray-400 mb-8 max-w-screen-md text-center">
@@ -72,17 +72,17 @@ export default function Welcome(props: any) {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
         <div className="flex justify-center">
-          <div className="flex flex-col items-center max-w-xs my-4">
+          <div className=" text-md md:text-xl flex flex-col items-center max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-2">img</div>
             <p className="text-lg text-white font-bold mb-2">Service 1</p>
             <p className="text-neutral-300 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className="flex flex-col items-center max-w-xs my-4">
+          <div className="text-md md:text-xl flex flex-col items-center max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-2">img</div>
             <p className="text-lg text-white font-bold mb-2">Service 2</p>
             <p className="text-neutral-300 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className="flex flex-col items-center max-w-xs my-4">
+          <div className="text-md md:text-xl flex flex-col items-center max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-2">img</div>
             <p className="text-lg text-white font-bold mb-2">Service 3</p>
             <p className="text-neutral-300 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -111,8 +111,8 @@ export default function Welcome(props: any) {
       </div>
 
       {/*-----*/}
-      <div className="bg-primary-300 min-h-screen ">
-        <div className="h-screen flex flex-wrap justify-center items-center">
+      <div className="bg-primary-300 h-screen 2xl:h-screen">
+        <div className="h-5/6 2xl:h-screen flex flex-col 2xl:flex-row justify-center items-center">
           <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-6">
             <svg className="w-full h-full">
               <title>Image</title>

@@ -1780,6 +1780,10 @@ select {
     height: 16rem;
   }
 
+  .sm\:h-screen {
+    height: 100vh;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1828,6 +1832,31 @@ select {
   .sm\:text-right {
     text-align: right;
   }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .sm\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
 }
 @media (min-width: 768px) {
 
@@ -1841,6 +1870,10 @@ select {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:h-1\/2 {
+    height: 50%;
   }
 
   .md\:grid-cols-2 {
@@ -1888,6 +1921,11 @@ select {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 @media (min-width: 1024px) {
 
@@ -1919,6 +1957,20 @@ select {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+}
+@media (min-width: 1536px) {
+
+  .\32xl\:h-screen {
+    height: 100vh;
+  }
+
+  .\32xl\:h-1\/2 {
+    height: 50%;
+  }
+
+  .\32xl\:flex-row {
+    flex-direction: row;
   }
 }
 
