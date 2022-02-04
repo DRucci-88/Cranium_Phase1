@@ -91,63 +91,57 @@ export default function Welcome(props: any) {
       </div>
 
       {/*bagian features*/}
-      <div className="bg-white">
-        <div className="container max-w-5xl mx-auto m-8">
-          <div className="flex flex-wrap">
-            <div className="w-5/6 sm:w-1/2 p-4 items-center sm:items-center">
-              <h3 className="m-6 text-3xl text-gray-800 font-bold leading-none mb-3">
-                Lorem ipsum dolor sit amet
-              </h3>
-              <p className="m-6 text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-                amet ligula.
-              </p>
-            </div>
-            <div className="w-full sm:w-1/2 p-4">
-              <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
-                <title>Image</title>
-                <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
-              </svg>
-            </div>
+      <div className="bg-primary-700 min-h-screen ">
+        <div className="h-screen flex flex-wrap justify-center items-center">
+          <div className="w-2/6">
+            <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
+              Lorem ipsum dolor sit amet
+            </h3>
+            <p className="m-2 text-gray-100 py-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
+            <svg className="w-full h-full">
+              <title>Image</title>
+              <rect   width="100%" display="block" height="100%" rx="15" fill="#f2f2f2" />
+            </svg>
           </div>
         </div>
       </div>
 
       {/*-----*/}
-      <div className="bg-primary-500">
-        <div className="container max-w-5xl mx-auto m-8">
-          <div className="flex flex-wrap">
-            <div className="w-full sm:w-1/2 p-4">
-              <svg className="w-full sm:h-64 mx-auto" viewBox="0 0 1177 598.5" xmlns="http://www.w3.org/2000/svg">
-                <title>Image</title>
-                <rect x="100" y="-20" width="900" height="600" rx="20.42" fill="#f2f2f2"/>
-              </svg>
-            </div>
-            <div className="w-3/6 sm:w-1/2 p-4 flex flex-col justify-center sm:justify-center">
-              <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
-                Get in touch
-              </h3>
-              <p className="m-2 text-neutral-300 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-                amet ligula.
-              </p>
-              <button className="m-2 btn-primary w-1/2 ">Contact Us</button>
-            </div>
+      <div className="bg-primary-300 min-h-screen ">
+        <div className="h-screen flex flex-wrap justify-center items-center">
+          <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-6">
+            <svg className="w-full h-full">
+              <title>Image</title>
+              <rect   width="100%" display="block" height="100%" rx="15" fill="#f2f2f2" />
+            </svg>
+          </div>
+          <div className="w-2/6">
+            <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
+              Get in touch
+            </h3>
+            <p className="m-2 text-gray-100 py-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <InertiaLink href="#" className="btn-primary">Contact us</InertiaLink>
           </div>
         </div>
       </div>
-
       {/*Footer*/}
-      <div className="bg-white">
-        <div className="container mx-auto text-center py-20">
-          <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-black">
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”
-          </h3>
-          <p className="mt-4 tracking-[.3em] text-xl leading-tight text-gray-400">
-            - CRANIUM -
-          </p>
-        </div>
-      </div>
+
+      {/*<div className="bg-primary-700">*/}
+      {/*  <div className="container mx-auto text-center py-20">*/}
+      {/*    <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-white">*/}
+      {/*      “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”*/}
+      {/*    </h3>*/}
+      {/*    <p className="mt-4 tracking-[.3em] text-xl leading-tight text-gray-100">*/}
+      {/*      - CRANIUM -*/}
+      {/*    </p>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       <div className="bg-primary-500">
         <div className="container mx-auto px-8">
