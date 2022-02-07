@@ -10852,9 +10852,9 @@ function Welcome(props) {
   };
 
   return react_1["default"].createElement("div", {
-    className: "bg-white font-sans leading-normal tracking-normal"
+    className: "bg-primary-600 font-sans leading-normal tracking-normal"
   }, react_1["default"].createElement("nav", {
-    className: "flex items-center justify-between flex-wrap bg-primary-500 p-3 fixed w-full z-10 top-0 pin-t"
+    className: "flex items-center justify-between flex-wrap bg-primary-600 p-3 fixed w-full z-10 top-0 pin-t"
   }, react_1["default"].createElement("div", {
     className: "flex items-center flex-shrink-0 text-white mr-6"
   }, react_1["default"].createElement(inertia_react_1.InertiaLink, {
@@ -10903,7 +10903,7 @@ function Welcome(props) {
     href: "#",
     className: "btn-primary"
   }, "Join an event")), react_1["default"].createElement("div", {
-    className: "bg-primary-500 flex flex-col justify-center items-center py-12"
+    className: "bg-gradient-to-b from-secondary-op to-primary-600 flex flex-col justify-center items-center py-12"
   }, react_1["default"].createElement("h4", {
     className: "text-2xl md:text-4xl text-white font-bold text-center"
   }, "Services"), react_1["default"].createElement("p", {
@@ -10935,7 +10935,7 @@ function Welcome(props) {
   }, "Service 3"), react_1["default"].createElement("p", {
     className: "text-neutral-300 text-center"
   }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit.")))), react_1["default"].createElement("div", {
-    className: "bg-primary-700 min-h-screen "
+    className: "bg-gradient-to-b from-primary-600 to-secondary-op min-h-screen "
   }, react_1["default"].createElement("div", {
     className: "h-screen flex flex-wrap justify-center items-center"
   }, react_1["default"].createElement("div", {
@@ -10955,7 +10955,7 @@ function Welcome(props) {
     rx: "15",
     fill: "#f2f2f2"
   }))))), react_1["default"].createElement("div", {
-    className: "bg-primary-300 h-screen 2xl:h-screen"
+    className: "bg-gradient-to-b from-secondary-op to-primary-600 h-screen 2xl:h-screen"
   }, react_1["default"].createElement("div", {
     className: "h-5/6 2xl:h-screen flex flex-col 2xl:flex-row justify-center items-center"
   }, react_1["default"].createElement("div", {
@@ -10978,7 +10978,7 @@ function Welcome(props) {
     href: "#",
     className: "btn-primary"
   }, "Contact us")))), react_1["default"].createElement("div", {
-    className: "bg-primary-500"
+    className: "bg-primary-700"
   }, react_1["default"].createElement("div", {
     className: "container mx-auto px-8"
   }, react_1["default"].createElement("div", {

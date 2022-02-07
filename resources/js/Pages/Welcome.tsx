@@ -9,8 +9,8 @@ export default function Welcome(props: any) {
     navContentRef.current?.classList.toggle('hidden');
   }
   return (
-    <div className="bg-white font-sans leading-normal tracking-normal">
-      <nav className="flex items-center justify-between flex-wrap bg-primary-500 p-3 fixed w-full z-10 top-0 pin-t">
+    <div className="bg-primary-600 font-sans leading-normal tracking-normal">
+      <nav className="flex items-center justify-between flex-wrap bg-primary-600 p-3 fixed w-full z-10 top-0 pin-t">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <InertiaLink href="/" className="text-white no-underline hover:text-white hover:no-underline">
             <span className="text-2xl pl-2 font-semibold">Cranium</span>
@@ -64,7 +64,7 @@ export default function Welcome(props: any) {
 
       {/* Services */}
 
-      <div className="bg-primary-500 flex flex-col justify-center items-center py-12">
+      <div className="bg-gradient-to-b from-secondary-op to-primary-600 flex flex-col justify-center items-center py-12">
         <h4 className="text-2xl md:text-4xl text-white font-bold text-center">
           Services
         </h4>
@@ -90,8 +90,9 @@ export default function Welcome(props: any) {
         </div>
       </div>
 
+
       {/*bagian features*/}
-      <div className="bg-primary-700 min-h-screen ">
+      <div className="bg-gradient-to-b from-primary-600 to-secondary-op min-h-screen ">
         <div className="h-screen flex flex-wrap justify-center items-center">
           <div className="w-2/6">
             <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
@@ -111,7 +112,7 @@ export default function Welcome(props: any) {
       </div>
 
       {/*-----*/}
-      <div className="bg-primary-300 h-screen 2xl:h-screen">
+      <div className="bg-gradient-to-b from-secondary-op to-primary-600 h-screen 2xl:h-screen">
         <div className="h-5/6 2xl:h-screen flex flex-col 2xl:flex-row justify-center items-center">
           <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-6">
             <svg className="w-full h-full">
@@ -143,7 +144,7 @@ export default function Welcome(props: any) {
       {/*  </div>*/}
       {/*</div>*/}
 
-      <div className="bg-primary-500">
+      <div className="bg-primary-700">
         <div className="container mx-auto px-8">
           <div className="w-full flex flex-col md:flex-row py-6">
             <div className="flex-1 mb-6 text-white">
